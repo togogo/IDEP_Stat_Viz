@@ -1,0 +1,40 @@
+{
+  "text amount count": [
+    {
+      "textNum": 0,
+      "elapsedSec": 0
+    },
+    {
+      "textNum": 9,
+      "elapsedSec": 1
+    },
+    {
+      "textNum": 25,
+      "elapsedSec": 2
+    },
+    {
+      "textNum": 42,
+      "elapsedSec": 3
+    },
+    {
+      "textNum": 58,
+      "elapsedSec": 4
+    },
+    {
+      "textNum": 79,
+      "elapsedSec": 5
+    },
+    {
+      "textNum": 99,
+      "elapsedSec": 6
+    },
+    {
+      "textNum": 108,
+      "elapsedSec": 7
+    },
+    {
+      "textNum": 108,
+      "elapsedSec": 8
+    }
+  ]
+}
