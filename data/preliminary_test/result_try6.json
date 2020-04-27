@@ -1,0 +1,19 @@
+{
+  "text amount count": [],
+  "final text": "fjaeiofejaioffjeioafejioaffejioafejiot the letters before me in the long trance. The ba",
+  "generated text": [
+    {
+      "genTextResult": "t the letters before me in the long trance. The ba",
+      "modelNum": 1,
+      "elapsedSec": 11
+    }
+  ],
+  "generation info": [
+    {
+      "seedText": "oaffe",
+      "elapsedSec": 7,
+      "genLength": 50,
+      "genTemp": 0.5
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "text amount count": [
+    {
+      "textNum": 79,
+      "elapsedSec": 0
+    },
+    {
+      "textNum": 79,
+      "elapsedSec": 0
+    },
+    {
+      "textNum": 79,
+      "elapsedSec": 1
+    },
+    {
+      "textNum": 79,
+      "elapsedSec": 1
+    },
+    {
+      "textNum": 92,
+      "elapsedSec": 2
+    },
+    {
+      "textNum": 93,
+      "elapsedSec": 2
+    },
+    {
+      "textNum": 113,
+      "elapsedSec": 3
+    },
+    {
+      "textNum": 113,
+      "elapsedSec": 3
+    },
+    {
+      "textNum": 113,
+      "elapsedSec": 4
+    },
+    {
+      "textNum": 113,
+      "elapsedSec": 4
+    },
+    {
+      "textNum": 113,
+      "elapsedSec": 5
+    },
+    {
+      "textNum": 113,
+      "elapsedSec": 5
+    },
+    {
+      "textNum": 113,
+      "elapsedSec": 6
+    },
+    {
+      "textNum": 113,
+      "elapsedSec": 6
+    },
+    {
+      "textNum": 113,
+      "elapsedSec": 7
+    },
+    {
+      "textNum": 113,
+      "elapsedSec": 7
+    },
+    {
+      "textNum": 113,
+      "elapsedSec": 8
+    },
+    {
+      "textNum": 113,
+      "elapsedSec": 8
+    },
+    {
+      "textNum": 113,
+      "elapsedSec": 9
+    },
+    {
+      "textNum": 113,
+      "elapsedSec": 9
+    },
+    {
+      "textNum": 113,
+      "elapsedSec": 10
+    },
+    {
+      "textNum": 113,
+      "elapsedSec": 10
+    },
+    {
+      "textNum": 113,
+      "elapsedSec": 11
+    },
+    {
+      "textNum": 113,
+      "elapsedSec": 11
+    },
+    {
+      "textNum": 113,
+      "elapsedSec": 12
+    },
+    {
+      "textNum": 113,
+      "elapsedSec": 12
+    },
+    {
+      "textNum": 113,
+      "elapsedSec": 13
+    },
+    {
+      "textNum": 113,
+      "elapsedSec": 13
+    },
+    {
+      "textNum": 113,
+      "elapsedSec": 14
+    },
+    {
+      "textNum": 126,
+      "elapsedSec": 14
+    }
+  ],
+  "final text": "fjeaifejafoiejfiaoejfis. Miss J. l. [?]\n\nand a few weeks in the same linoaejfiojoifeajifoeaf\nfejioaejfaioefjaeiofs really the ",
+  "generated text": [
+    {
+      "genTextResult": "s. Is this really the most brilliant young man and",
+      "modelNum": 1,
+      "elapsedSec": 10
+    }
+  ],
+  "generation info": [
+    {
+      "seedText": "weeks in the same linoaejfiojoifeajifoeaf\nfejioaejfaioefjaeiof",
+      "elapsedSec": 6,
+      "genLength": 50,
+      "genTemp": 0.5
+    }
+  ]
+}

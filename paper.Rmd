@@ -1,0 +1,86 @@
+---
+title: " Creative Agent"
+subtitle: "Master Thesis, Harvard University"
+author: "Togo Kida"
+output: pdf_document
+fontsize: 11pt
+geometry: "left=1in,right=1in,top=1in,bottom=1in"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(dplyr)
+library(gt)
+library(ggplot2)
+library(cowplot)
+library(png)
+
+```
+
+```{r, echo = FALSE, message = FALSE}
+
+
+```
+
+## Abstract
+Design has become one of the hottest topics these days in the field of business. Many traditional consulting firms are buying design firms to further bolster their capabilities of business consulting by integrating design expertise into the function. There are MBA programs in the United States that combine design curriculums to train students unlike from the tradtional business school standpoint. 
+
+With that overall trend present, what is the state of designers and creatives working in the creative industry? How can they be understood from an economic angle? In this paper, we will draw data from various sources to answer these questions.
+
+## Background and Research Question
+As the tech industries have flourished in the Silicon Valley creating digital products, the term "design" and "designers" have gained fame over the years in the business world. Seeing a business opportunity, consulting firms such as Boston Consultng Group and McKinsey and Company have been purchasing numerous design agencies. 
+
+Although design has become a crucial function in the business today, little is understood regarding the actual people who consist this profession, and how much they are compensated. Given the relatively unknown understanding of designers and creatives economically, the main goal of this research is to understand the current state of them by utilizing quantitative surveys and census.
+
+## Research Method and Data
+
+For this objective, this paper will resort to two datasets mainly. One is the Design Census, conducted by Google and American Institute of Graphic Arts (AIGA). The goal of this survey, as stated in their website, is to collect information that can be used to empower the design community to take charge of its professional development and achieve greater happiness through insight. The census collectively asks designers questions such as about their employment status, salary, ethnicies, and job satisfaction. Given that this is a relatively new survey, the questionaires change slightly annually, and for consistency purposes, we will use the 2019 and 2017 census for further analysis. This survey is done through a voluntary online survey response.
+
+Another dataset we are going to look into is Equal Employment Opportunity Tabulation conducted by the United States Cencus Bereau. This survey is a primary benchmark for comparing race, ethnicity, income levels, and sex composition within a specified geography and job category. The latest version of this dataset was used for analysis. Unlike Design Census mentioned above, this survey is done through recruitement, which may offset the bias that might be present in the dataset. Summary of the dataset used is provided in $Table 1$.
+
+```{r, echo = FALSE, message = FALSE, out.width = '100%'}
+
+```
+
+## Analysis
+
+As a starting point we will evaluate the state of designers by plotting where they live and how much they are making. $Figure 1$ shows where designers live the most in the United States by number and the income breakdown based on the states. As we see, California, New York and Texas are the states that attract most of the designers. By looking at other related creative profession, this tendency remains true. In $Figure 2.A$ and $Figure 2.B$, we can see that both the most popular states for architects and artists are the same with designers.
+
+```{r, echo=FALSE, fig.cap="Designers Residence in the United States and Income Breakdown", out.width = '100%'}
+
+```
+
+Another noteworthy aspect of this plot is the income level of each profession based on states. While architects generally make the most annual income and the aritsts the least, there is no indication of popular states such as California, New York, and Texas providing these professions an economic advantage. Furthermore, by looking into other states, there are some cases such that the "unpopular" states yield higher income for most of the popular states.
+
+```{r, echo=FALSE, fig.cap="Architect/Artist Residence in the United States and Income Breakdown", out.width = '100%'}
+#knitr::include_graphics("./imgs/arch_art_res_income.png")
+```
+
+Next, we will look at the income breakdown of designers based on ethnicities. In $Figure 3$, we can see four plots which shows annual income of designers by age with a linear regression line added. The plot is divided into four ethnicities: Asian designers, African American designers, Hispanic designers, and Caucasian designers. All four plots show an increasing regression line, but for the Asian designers, the slope of the regression ine is slightly higher. While the regression lines for non-Asian designers reach around 100,000USD at the age of 60, the regression line for Asian designers reach 125,000USD. In the interest of space of this paper we have not included here, but the same tendency holds true for the 2019 data as well.
+
+```{r, echo=FALSE, fig.cap="Designer's Income Breakdown based on Ethnicities", out.width = '100%'}
+#knitr::include_graphics("./imgs/eth_income.png")
+```
+
+Lastly, we will look at the income breakdown of designers based on gender. In $Figure 4$, two plots are shown here comaring the annual income of desginers by age with a linear regression line added but this time separated by gender. Looking at the regression line for both of the plots, we can see that the regiression line for the male designers have a steeper slope than the regression line for female designers.
+
+```{r, echo=FALSE, fig.cap="Designer's Income Breakdown based on Gender", out.width = '100%'}
+#knitr::include_graphics("./imgs/sex_income.png")
+```
+
+## Discussion  
+From the plots above, we have broken down some aspects of designers and creatives. While different income levels are apparent among different creative professions, the data we analyzed goes against the conception that one needs to go to "big" states such as California, New York and Texas to get a high paying job as a creative professional. Rather, the data shows that regardless of the location, difference in income is similar within the same creative profession.  
+
+With regards to the income based on ethnicities, more research needs to be conducted to determine the reason why there Asian designers are having higher income increase based on age. One might argue, however, that because this data is coming from Design Census, which is a voluntary online survey as mentioned in $Table 1$, there is some question about the specific figures people responded. The same goes for the difference in annual income based on gender. Rather than explaining the actual difference of income based on gender, it may that male designers simply report higher annual income than the female designers to make themselves look good.
+
+## Conclusion
+In this paper, we have dug deep into the economic standpoints of creative professionals. 
+
+## References
+United States Cencus Bereau. (2012). Equal Employment Opportunity Tabulation [CSV File]. Retrieved from https://www.census.gov/topics/employment/equal-employment-opportunity-tabulation.html
+
+American Institute of Graphic Arts. (2019). Design Census 2019 [CSV File]. Retrieved from https://designcensus.org/
+
+American Institute of Graphic Arts. (2017). Design Census 2017 [CSV File]. Retrieved from http://designcensus2017.aiga.org/

@@ -1,0 +1,80 @@
+{
+  "text amount count": [
+    {
+      "textNum": 72,
+      "elapsedSec": 0
+    },
+    {
+      "textNum": 72,
+      "elapsedSec": 1
+    },
+    {
+      "textNum": 74,
+      "elapsedSec": 2
+    },
+    {
+      "textNum": 98,
+      "elapsedSec": 3
+    },
+    {
+      "textNum": 98,
+      "elapsedSec": 4
+    },
+    {
+      "textNum": 98,
+      "elapsedSec": 5
+    },
+    {
+      "textNum": 98,
+      "elapsedSec": 6
+    },
+    {
+      "textNum": 98,
+      "elapsedSec": 7
+    },
+    {
+      "textNum": 98,
+      "elapsedSec": 8
+    },
+    {
+      "textNum": 98,
+      "elapsedSec": 9
+    },
+    {
+      "textNum": 98,
+      "elapsedSec": 10
+    },
+    {
+      "textNum": 98,
+      "elapsedSec": 11
+    },
+    {
+      "textNum": 146,
+      "elapsedSec": 12
+    },
+    {
+      "textNum": 146,
+      "elapsedSec": 13
+    },
+    {
+      "textNum": 146,
+      "elapsedSec": 14
+    }
+  ],
+  "final text": "fjaoifajiofaejiofeioj  paper has seen the deeper, and the tears was livieafjeoiafeajiofeaijofaejiolong paper beneing on the ground to bed at Treva",
+  "generated text": [
+    {
+      "genTextResult": "e long paper beneing on the ground to bed at Treva",
+      "modelNum": 1,
+      "elapsedSec": 8
+    }
+  ],
+  "generation info": [
+    {
+      "seedText": " has seen th",
+      "elapsedSec": 8,
+      "genLength": 50,
+      "genTemp": 0.5
+    }
+  ]
+}

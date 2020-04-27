@@ -1,0 +1,67 @@
+{
+  "text amount count": [
+    {
+      "textNum": 0,
+      "elapsedSec": 0
+    },
+    {
+      "textNum": 19,
+      "elapsedSec": 1
+    },
+    {
+      "textNum": 38,
+      "elapsedSec": 2
+    },
+    {
+      "textNum": 57,
+      "elapsedSec": 3
+    },
+    {
+      "textNum": 77,
+      "elapsedSec": 4
+    },
+    {
+      "textNum": 98,
+      "elapsedSec": 5
+    },
+    {
+      "textNum": 120,
+      "elapsedSec": 6
+    },
+    {
+      "textNum": 139,
+      "elapsedSec": 7
+    },
+    {
+      "textNum": 160,
+      "elapsedSec": 8
+    },
+    {
+      "textNum": 181,
+      "elapsedSec": 9
+    },
+    {
+      "textNum": 200,
+      "elapsedSec": 10
+    },
+    {
+      "textNum": 223,
+      "elapsedSec": 11
+    },
+    {
+      "textNum": 240,
+      "elapsedSec": 12
+    },
+    {
+      "textNum": 258,
+      "elapsedSec": 13
+    },
+    {
+      "textNum": 275,
+      "elapsedSec": 14
+    }
+  ],
+  "final text": "ajfoeiafjeiofajeioffjeioafjeioafjeioaffjeioafjeiaofjeaioffjeioafjeioafjeaioffjeiaofjeaiofjeaioffjeaiofjeaiofjeaioffjaeiofjaeiofjaeiofjafioefjaioefjaeiofjeaiofjeaiofejaiofjieaofjeaiofeajiofjeaiofjeioafejioafjaioefjaioefjaieofjaioefjeaiofajiofajioefjaioefajoieajfsioejaioefjaio",
+  "generated text": [],
+  "generation info": []
+}
