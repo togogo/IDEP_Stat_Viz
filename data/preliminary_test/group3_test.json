@@ -1,0 +1,827 @@
+{
+  "text amount count": [
+    {
+      "textNum": 16,
+      "elapsedSec": 0
+    },
+    {
+      "textNum": 16,
+      "elapsedSec": 1
+    },
+    {
+      "textNum": 16,
+      "elapsedSec": 2
+    },
+    {
+      "textNum": 16,
+      "elapsedSec": 3
+    },
+    {
+      "textNum": 16,
+      "elapsedSec": 4
+    },
+    {
+      "textNum": 16,
+      "elapsedSec": 5
+    },
+    {
+      "textNum": 16,
+      "elapsedSec": 6
+    },
+    {
+      "textNum": 16,
+      "elapsedSec": 7
+    },
+    {
+      "textNum": 16,
+      "elapsedSec": 8
+    },
+    {
+      "textNum": 31,
+      "elapsedSec": 9
+    },
+    {
+      "textNum": 48,
+      "elapsedSec": 10
+    },
+    {
+      "textNum": 48,
+      "elapsedSec": 11
+    },
+    {
+      "textNum": 48,
+      "elapsedSec": 12
+    },
+    {
+      "textNum": 48,
+      "elapsedSec": 13
+    },
+    {
+      "textNum": 48,
+      "elapsedSec": 14
+    },
+    {
+      "textNum": 48,
+      "elapsedSec": 15
+    },
+    {
+      "textNum": 48,
+      "elapsedSec": 16
+    },
+    {
+      "textNum": 54,
+      "elapsedSec": 17
+    },
+    {
+      "textNum": 71,
+      "elapsedSec": 18
+    },
+    {
+      "textNum": 71,
+      "elapsedSec": 19
+    },
+    {
+      "textNum": 71,
+      "elapsedSec": 20
+    },
+    {
+      "textNum": 71,
+      "elapsedSec": 21
+    },
+    {
+      "textNum": 71,
+      "elapsedSec": 22
+    },
+    {
+      "textNum": 71,
+      "elapsedSec": 23
+    },
+    {
+      "textNum": 71,
+      "elapsedSec": 24
+    },
+    {
+      "textNum": 71,
+      "elapsedSec": 25
+    }
+  ],
+  "final text": "fjioejfaoifejaiofjaoifejawiofejaifoejfioaejfioaejfaiofjeaiofejaiofeajio",
+  "generated text": [
+    {
+      "genTextResult": "秘めごとためいきが",
+      "modelNum": 1,
+      "elapsedSec": 5
+    },
+    {
+      "genTextResult": "雨あがりの夕暮れに思い出輝いたなら",
+      "modelNum": 2,
+      "elapsedSec": 5
+    },
+    {
+      "genTextResult": "今は秋帰りたい",
+      "modelNum": 3,
+      "elapsedSec": 5
+    },
+    {
+      "genTextResult": "少しうちとけて歌ううたは",
+      "modelNum": 1,
+      "elapsedSec": 6
+    },
+    {
+      "genTextResult": "駄目なわたしね悩んでみたって",
+      "modelNum": 2,
+      "elapsedSec": 6
+    },
+    {
+      "genTextResult": "わだかまり君さえ",
+      "modelNum": 3,
+      "elapsedSec": 6
+    },
+    {
+      "genTextResult": "子供の愛じゃなく生命(いのち)すててもいいほど",
+      "modelNum": 1,
+      "elapsedSec": 6
+    },
+    {
+      "genTextResult": "いつまでも泣かしたな指輪はずした",
+      "modelNum": 2,
+      "elapsedSec": 6
+    },
+    {
+      "genTextResult": "押し込められた護送バスの中で誰もが何かが少しだけ違う生き方強いられるこの暮らしが始まる始まる前に一つだけ聞いておこう動機と心の病の上に罪名が被さる脅えと目眩",
+      "modelNum": 3,
+      "elapsedSec": 6
+    },
+    {
+      "genTextResult": "Oh俺はきっと忘れない",
+      "modelNum": 1,
+      "elapsedSec": 6
+    },
+    {
+      "genTextResult": "指さすままにゆれて流れる",
+      "modelNum": 2,
+      "elapsedSec": 6
+    },
+    {
+      "genTextResult": "足音消えてゆくまで舗道はいつか",
+      "modelNum": 3,
+      "elapsedSec": 6
+    },
+    {
+      "genTextResult": "なつかしい気立てのやさしい",
+      "modelNum": 1,
+      "elapsedSec": 6
+    },
+    {
+      "genTextResult": "イルミネーション窓の外",
+      "modelNum": 2,
+      "elapsedSec": 6
+    },
+    {
+      "genTextResult": "忘れられないあなたの声が「君は独りで大丈夫だから…。」I'm in blue雪になりそうな雨が窓を打つ",
+      "modelNum": 3,
+      "elapsedSec": 6
+    },
+    {
+      "genTextResult": "もう一度",
+      "modelNum": 1,
+      "elapsedSec": 6
+    },
+    {
+      "genTextResult": "甘えたがり叱られて",
+      "modelNum": 2,
+      "elapsedSec": 6
+    },
+    {
+      "genTextResult": "日曜日ラリルレリ",
+      "modelNum": 3,
+      "elapsedSec": 6
+    },
+    {
+      "genTextResult": "わがままを許してはなれても",
+      "modelNum": 1,
+      "elapsedSec": 6
+    },
+    {
+      "genTextResult": "何処でも行ける稲妻みたいな",
+      "modelNum": 2,
+      "elapsedSec": 6
+    },
+    {
+      "genTextResult": "漕ぎ出せるはずShe's A Girl",
+      "modelNum": 3,
+      "elapsedSec": 6
+    },
+    {
+      "genTextResult": "定山渓酔ってもえてる",
+      "modelNum": 1,
+      "elapsedSec": 7
+    },
+    {
+      "genTextResult": "傷つくことで",
+      "modelNum": 2,
+      "elapsedSec": 7
+    },
+    {
+      "genTextResult": "よせばいいのにあの頃見ていた夢今でも",
+      "modelNum": 3,
+      "elapsedSec": 7
+    },
+    {
+      "genTextResult": "(共犯者)その身体 ひとつのコートに包む夢見たキャンドルみたいな",
+      "modelNum": 1,
+      "elapsedSec": 7
+    },
+    {
+      "genTextResult": "呼んでみたい燃える不知火 お酒に浮かべ一緒に飲めば 結ばれるふたりでつくった 恋の神話をさがした夜がなつかしいここは島原 西有家あのひと恋し 潮騒の町よいまも私は ひとりでいると伝えて欲しい あのひとに天草通いか 白いフェリーが夜霧のなかへ 消えてゆく窓に吐息で 書いてみる十字架哀し 潮騒の町よ古い城跡 咲くはまゆうの香りに偲ぶ 愛の日々滝音涼しい そうめん流しふれあう箸の 思い出も胸の小筐の 蓋あけてひたひた寄せる 潮騒の町よ彼女が髪を指で分けただけそれがシビれるしぐさ心にいつもアナタだけを映しているの恋は言葉じゃなく",
+      "modelNum": 2,
+      "elapsedSec": 7
+    },
+    {
+      "genTextResult": "ソラン",
+      "modelNum": 3,
+      "elapsedSec": 7
+    },
+    {
+      "genTextResult": "二人の未来想うたぶん",
+      "modelNum": 1,
+      "elapsedSec": 7
+    },
+    {
+      "genTextResult": "命くれない",
+      "modelNum": 2,
+      "elapsedSec": 7
+    },
+    {
+      "genTextResult": "あたし泣いたのひとり夜更けの",
+      "modelNum": 3,
+      "elapsedSec": 7
+    },
+    {
+      "genTextResult": "飲みこんだ余裕ないけど",
+      "modelNum": 1,
+      "elapsedSec": 7
+    },
+    {
+      "genTextResult": "ショートしそうだ罪なバラード",
+      "modelNum": 2,
+      "elapsedSec": 7
+    },
+    {
+      "genTextResult": "ふたり頬に光る",
+      "modelNum": 3,
+      "elapsedSec": 7
+    },
+    {
+      "genTextResult": "また春がきてあの日とおなじ",
+      "modelNum": 1,
+      "elapsedSec": 7
+    },
+    {
+      "genTextResult": "秘められた永遠にsha…Shall we dance ?",
+      "modelNum": 2,
+      "elapsedSec": 7
+    },
+    {
+      "genTextResult": "オジサンは!オジサンは",
+      "modelNum": 3,
+      "elapsedSec": 7
+    },
+    {
+      "genTextResult": "呟いたもう言わないよ",
+      "modelNum": 1,
+      "elapsedSec": 13
+    },
+    {
+      "genTextResult": "You and Me",
+      "modelNum": 2,
+      "elapsedSec": 13
+    },
+    {
+      "genTextResult": "やさしくほほえんで僕を見つめてくれた",
+      "modelNum": 3,
+      "elapsedSec": 13
+    },
+    {
+      "genTextResult": "私のことを忘れたかしら",
+      "modelNum": 1,
+      "elapsedSec": 13
+    },
+    {
+      "genTextResult": "あなたとここにいる遠い列車に乗る",
+      "modelNum": 2,
+      "elapsedSec": 13
+    },
+    {
+      "genTextResult": "わかります娘を嫁に",
+      "modelNum": 3,
+      "elapsedSec": 13
+    },
+    {
+      "genTextResult": "トゲがある刺したかないが",
+      "modelNum": 1,
+      "elapsedSec": 13
+    },
+    {
+      "genTextResult": "星を数えてみる光の糸をたどれば",
+      "modelNum": 2,
+      "elapsedSec": 13
+    },
+    {
+      "genTextResult": "さされ組何かに意地になってるあの人を好きでいたいうしろ指(うしろ指)さされ組(さされ組)ララ…LOVE ME",
+      "modelNum": 3,
+      "elapsedSec": 13
+    },
+    {
+      "genTextResult": "蝉しぐれいまは三月",
+      "modelNum": 1,
+      "elapsedSec": 13
+    },
+    {
+      "genTextResult": "夏の香り急ぎ足で",
+      "modelNum": 2,
+      "elapsedSec": 13
+    },
+    {
+      "genTextResult": "ああ抱きしめてBaby(Yes！)",
+      "modelNum": 3,
+      "elapsedSec": 13
+    },
+    {
+      "genTextResult": "信じても",
+      "modelNum": 1,
+      "elapsedSec": 13
+    },
+    {
+      "genTextResult": "明るくなれば夜が明けるから",
+      "modelNum": 2,
+      "elapsedSec": 13
+    },
+    {
+      "genTextResult": "裏町ぐらし酒でまぎらす",
+      "modelNum": 3,
+      "elapsedSec": 13
+    },
+    {
+      "genTextResult": "さよならはいつだってやさしさを失った海の色悲しいね",
+      "modelNum": 1,
+      "elapsedSec": 14
+    },
+    {
+      "genTextResult": "雨だろうさっき",
+      "modelNum": 2,
+      "elapsedSec": 14
+    },
+    {
+      "genTextResult": "1っこは食べて7つ飾るわもうすぐあなたが帰って来る",
+      "modelNum": 3,
+      "elapsedSec": 14
+    },
+    {
+      "genTextResult": "荒磯波はあだし仇波",
+      "modelNum": 1,
+      "elapsedSec": 14
+    },
+    {
+      "genTextResult": "届けたい高鳴る",
+      "modelNum": 2,
+      "elapsedSec": 14
+    },
+    {
+      "genTextResult": "みせますわ夜に泣いてる",
+      "modelNum": 3,
+      "elapsedSec": 14
+    },
+    {
+      "genTextResult": "また惚れてはぐれ鳥にも",
+      "modelNum": 1,
+      "elapsedSec": 14
+    },
+    {
+      "genTextResult": "ふっと心を閉ざし",
+      "modelNum": 2,
+      "elapsedSec": 14
+    },
+    {
+      "genTextResult": "カモメが笑う投げたテープが",
+      "modelNum": 3,
+      "elapsedSec": 14
+    },
+    {
+      "genTextResult": "つないだ胸を温めましょうか温めましょうか",
+      "modelNum": 1,
+      "elapsedSec": 14
+    },
+    {
+      "genTextResult": "素敵な君に乾杯優しい気持ちを",
+      "modelNum": 2,
+      "elapsedSec": 14
+    },
+    {
+      "genTextResult": "いまみつめてる",
+      "modelNum": 3,
+      "elapsedSec": 14
+    },
+    {
+      "genTextResult": "どうにかなる今夜",
+      "modelNum": 1,
+      "elapsedSec": 14
+    },
+    {
+      "genTextResult": "追いかけたね遥かな水平線には",
+      "modelNum": 2,
+      "elapsedSec": 14
+    },
+    {
+      "genTextResult": "みんな君に僕の中に悲しみだけが",
+      "modelNum": 3,
+      "elapsedSec": 14
+    },
+    {
+      "genTextResult": "愛してる",
+      "modelNum": 1,
+      "elapsedSec": 14
+    },
+    {
+      "genTextResult": "からだを削るそんなおんなに",
+      "modelNum": 2,
+      "elapsedSec": 14
+    },
+    {
+      "genTextResult": "ちいさな春に今夜はしみじみ",
+      "modelNum": 3,
+      "elapsedSec": 14
+    },
+    {
+      "genTextResult": "咲き乱れて月夜の花",
+      "modelNum": 1,
+      "elapsedSec": 15
+    },
+    {
+      "genTextResult": "強いぞ",
+      "modelNum": 2,
+      "elapsedSec": 15
+    },
+    {
+      "genTextResult": "暗い小窓で",
+      "modelNum": 3,
+      "elapsedSec": 15
+    },
+    {
+      "genTextResult": "そういう女です恋は火の舞",
+      "modelNum": 1,
+      "elapsedSec": 15
+    },
+    {
+      "genTextResult": "ふたりしだいで甘く",
+      "modelNum": 2,
+      "elapsedSec": 15
+    },
+    {
+      "genTextResult": "(せつないね)チークに誘っても頬そむけ逃げ出すParty",
+      "modelNum": 3,
+      "elapsedSec": 15
+    },
+    {
+      "genTextResult": "なんにも考えちゃいけないララバイ",
+      "modelNum": 1,
+      "elapsedSec": 15
+    },
+    {
+      "genTextResult": "アチャコメンソールの長い煙草をため息で吸いながら水割りのグラスの中に落としたおまえの涙いいの",
+      "modelNum": 2,
+      "elapsedSec": 15
+    },
+    {
+      "genTextResult": "愛しているんだDance",
+      "modelNum": 3,
+      "elapsedSec": 15
+    },
+    {
+      "genTextResult": "まいっているから目覚める前に見てた夢はきっときっといつかかなう確か君は腕の中であの日そう言ってたつまらぬ事で笑いあってささいな事でいがみあってそれでも二人同じ夢に守られていた頃君だけがいない朝君だけがいない部屋ゆっくりうすれてく痛みをなぞってもLonely Eyes今は君の瞳うまく思いだせないLonely Eyesやがて消えてしまう君のすべてが悲しいね二人だけしか",
+      "modelNum": 1,
+      "elapsedSec": 15
+    },
+    {
+      "genTextResult": "僕らの感じることはこれだけのことなの君は探しつづけてるスタンドの油だらけの壁と",
+      "modelNum": 2,
+      "elapsedSec": 15
+    },
+    {
+      "genTextResult": "わたしに昨日まで",
+      "modelNum": 3,
+      "elapsedSec": 15
+    },
+    {
+      "genTextResult": "踊り続けろDance all night明日は明日さ",
+      "modelNum": 1,
+      "elapsedSec": 24
+    },
+    {
+      "genTextResult": "咲いてた花よ絆むすんだ",
+      "modelNum": 2,
+      "elapsedSec": 24
+    },
+    {
+      "genTextResult": "言わないで他に道なき",
+      "modelNum": 3,
+      "elapsedSec": 24
+    },
+    {
+      "genTextResult": "お別れのキスをしておくれ雨のヴェールで隠れてるうちにいつも",
+      "modelNum": 1,
+      "elapsedSec": 24
+    },
+    {
+      "genTextResult": "ろこぎつらい漁師に",
+      "modelNum": 2,
+      "elapsedSec": 24
+    },
+    {
+      "genTextResult": "ごめんね",
+      "modelNum": 3,
+      "elapsedSec": 24
+    },
+    {
+      "genTextResult": "たまに来るのは紙芝居俺らこんな村いやだ",
+      "modelNum": 1,
+      "elapsedSec": 24
+    },
+    {
+      "genTextResult": "Anybody Can't Stop The LoveCan't Stop The LoveAnybody Can't Stop The Love素敵な夢を見させておくれ素敵な夢をかなえておくれ(S.M.A.P SMAP！",
+      "modelNum": 2,
+      "elapsedSec": 24
+    },
+    {
+      "genTextResult": "血を絞り骨を削って得るものだがんばろうぜ！",
+      "modelNum": 3,
+      "elapsedSec": 24
+    },
+    {
+      "genTextResult": "気取ったブランド",
+      "modelNum": 1,
+      "elapsedSec": 24
+    },
+    {
+      "genTextResult": "いつまでも雨の東京に",
+      "modelNum": 2,
+      "elapsedSec": 24
+    },
+    {
+      "genTextResult": "私を抱きしめた腕探すアイサレテイルイマハカノジョガアイサレテイルいつも",
+      "modelNum": 3,
+      "elapsedSec": 24
+    },
+    {
+      "genTextResult": "この世のものたちに捧げる",
+      "modelNum": 1,
+      "elapsedSec": 25
+    },
+    {
+      "genTextResult": "訪ねてああ",
+      "modelNum": 2,
+      "elapsedSec": 25
+    },
+    {
+      "genTextResult": "靴音が響くと涼しげな顔が",
+      "modelNum": 3,
+      "elapsedSec": 25
+    }
+  ],
+  "generation info": [
+    {
+      "seedText": "ioejfaoifejaio",
+      "elapsedSec": 5,
+      "genLength": 50,
+      "genTemp": 0.5
+    },
+    {
+      "seedText": "ioejfaoifejaio",
+      "elapsedSec": 6,
+      "genLength": 50,
+      "genTemp": 0.5
+    },
+    {
+      "seedText": "ioejfaoifejaio",
+      "elapsedSec": 6,
+      "genLength": 50,
+      "genTemp": 0.5
+    },
+    {
+      "seedText": "ioejfaoifejaio",
+      "elapsedSec": 6,
+      "genLength": 50,
+      "genTemp": 0.5
+    },
+    {
+      "seedText": "ioejfaoifejaio",
+      "elapsedSec": 6,
+      "genLength": 50,
+      "genTemp": 0.5
+    },
+    {
+      "seedText": "ioejfaoifejaio",
+      "elapsedSec": 6,
+      "genLength": 50,
+      "genTemp": 0.5
+    },
+    {
+      "seedText": "ioejfaoifejaio",
+      "elapsedSec": 6,
+      "genLength": 50,
+      "genTemp": 0.5
+    },
+    {
+      "seedText": "ioejfaoifejaio",
+      "elapsedSec": 7,
+      "genLength": 50,
+      "genTemp": 0.5
+    },
+    {
+      "seedText": "ioejfaoifejaio",
+      "elapsedSec": 7,
+      "genLength": 50,
+      "genTemp": 0.5
+    },
+    {
+      "seedText": "ioejfaoifejaio",
+      "elapsedSec": 7,
+      "genLength": 50,
+      "genTemp": 0.5
+    },
+    {
+      "seedText": "ioejfaoifejaio",
+      "elapsedSec": 7,
+      "genLength": 50,
+      "genTemp": 0.5
+    },
+    {
+      "seedText": "ioejfaoifejaio",
+      "elapsedSec": 7,
+      "genLength": 50,
+      "genTemp": 0.5
+    },
+    {
+      "seedText": "fjioejfaoifejaiofjaoifejawiofejaifoejfioaejfioae",
+      "elapsedSec": 13,
+      "genLength": 50,
+      "genTemp": 0.5
+    },
+    {
+      "seedText": "fjioejfaoifejaiofjaoifejawiofejaifoejfioaejfioae",
+      "elapsedSec": 13,
+      "genLength": 50,
+      "genTemp": 0.5
+    },
+    {
+      "seedText": "fjioejfaoifejaiofjaoifejawiofejaifoejfioaejfioae",
+      "elapsedSec": 13,
+      "genLength": 50,
+      "genTemp": 0.5
+    },
+    {
+      "seedText": "fjioejfaoifejaiofjaoifejawiofejaifoejfioaejfioae",
+      "elapsedSec": 13,
+      "genLength": 50,
+      "genTemp": 0.5
+    },
+    {
+      "seedText": "fjioejfaoifejaiofjaoifejawiofejaifoejfioaejfioae",
+      "elapsedSec": 13,
+      "genLength": 50,
+      "genTemp": 0.5
+    },
+    {
+      "seedText": "fjioejfaoifejaiofjaoifejawiofejaifoejfioaejfioae",
+      "elapsedSec": 14,
+      "genLength": 50,
+      "genTemp": 0.5
+    },
+    {
+      "seedText": "fjioejfaoifejaiofjaoifejawiofejaifoejfioaejfioae",
+      "elapsedSec": 14,
+      "genLength": 50,
+      "genTemp": 0.5
+    },
+    {
+      "seedText": "fjioejfaoifejaiofjaoifejawiofejaifoejfioaejfioae",
+      "elapsedSec": 14,
+      "genLength": 50,
+      "genTemp": 0.5
+    },
+    {
+      "seedText": "fjioejfaoifejaiofjaoifejawiofejaifoejfioaejfioae",
+      "elapsedSec": 14,
+      "genLength": 50,
+      "genTemp": 0.5
+    },
+    {
+      "seedText": "fjioejfaoifejaiofjaoifejawiofejaifoejfioaejfioae",
+      "elapsedSec": 14,
+      "genLength": 50,
+      "genTemp": 0.5
+    },
+    {
+      "seedText": "fjioejfaoifejaiofjaoifejawiofejaifoejfioaejfioae",
+      "elapsedSec": 14,
+      "genLength": 50,
+      "genTemp": 0.5
+    },
+    {
+      "seedText": "fjioejfaoifejaiofjaoifejawiofejaifoejfioaejfioae",
+      "elapsedSec": 15,
+      "genLength": 50,
+      "genTemp": 0.5
+    },
+    {
+      "seedText": "fjioejfaoifejaiofjaoifejawiofejaifoejfioaejfioae",
+      "elapsedSec": 15,
+      "genLength": 50,
+      "genTemp": 0.5
+    },
+    {
+      "seedText": "fjioejfaoifejaiofjaoifejawiofejaifoejfioaejfioae",
+      "elapsedSec": 15,
+      "genLength": 50,
+      "genTemp": 0.5
+    },
+    {
+      "seedText": "fjioejfaoifejaiofjaoifejawiofejaifoejfioaejfioae",
+      "elapsedSec": 15,
+      "genLength": 50,
+      "genTemp": 0.5
+    },
+    {
+      "seedText": "",
+      "elapsedSec": 20,
+      "genLength": 50,
+      "genTemp": 0.5
+    },
+    {
+      "seedText": "",
+      "elapsedSec": 20,
+      "genLength": 50,
+      "genTemp": 0.5
+    },
+    {
+      "seedText": "",
+      "elapsedSec": 20,
+      "genLength": 50,
+      "genTemp": 0.5
+    },
+    {
+      "seedText": "",
+      "elapsedSec": 20,
+      "genLength": 50,
+      "genTemp": 0.5
+    },
+    {
+      "seedText": "",
+      "elapsedSec": 20,
+      "genLength": 50,
+      "genTemp": 0.5
+    },
+    {
+      "seedText": "",
+      "elapsedSec": 21,
+      "genLength": 50,
+      "genTemp": 0.5
+    },
+    {
+      "seedText": "",
+      "elapsedSec": 21,
+      "genLength": 50,
+      "genTemp": 0.5
+    },
+    {
+      "seedText": "fejaifoejfioaejfioaejfaiofjeaiofejai",
+      "elapsedSec": 24,
+      "genLength": 50,
+      "genTemp": 0.5
+    },
+    {
+      "seedText": "fejaifoejfioaejfioaejfaiofjeaiofejai",
+      "elapsedSec": 24,
+      "genLength": 50,
+      "genTemp": 0.5
+    },
+    {
+      "seedText": "fejaifoejfioaejfioaejfaiofjeaiofejai",
+      "elapsedSec": 24,
+      "genLength": 50,
+      "genTemp": 0.5
+    },
+    {
+      "seedText": "fejaifoejfioaejfioaejfaiofjeaiofejai",
+      "elapsedSec": 24,
+      "genLength": 50,
+      "genTemp": 0.5
+    },
+    {
+      "seedText": "fejaifoejfioaejfioaejfaiofjeaiofejai",
+      "elapsedSec": 25,
+      "genLength": 50,
+      "genTemp": 0.5
+    }
+  ]
+}

@@ -1,0 +1,237 @@
+{
+  "text amount count": [
+    {
+      "textNum": 0,
+      "elapsedSec": 0
+    },
+    {
+      "textNum": 3,
+      "elapsedSec": 1
+    },
+    {
+      "textNum": 4,
+      "elapsedSec": 2
+    },
+    {
+      "textNum": 5,
+      "elapsedSec": 3
+    },
+    {
+      "textNum": 5,
+      "elapsedSec": 4
+    },
+    {
+      "textNum": 5,
+      "elapsedSec": 5
+    },
+    {
+      "textNum": 5,
+      "elapsedSec": 6
+    },
+    {
+      "textNum": 5,
+      "elapsedSec": 7
+    },
+    {
+      "textNum": 5,
+      "elapsedSec": 8
+    },
+    {
+      "textNum": 10,
+      "elapsedSec": 9
+    },
+    {
+      "textNum": 8,
+      "elapsedSec": 10
+    },
+    {
+      "textNum": 11,
+      "elapsedSec": 11
+    },
+    {
+      "textNum": 11,
+      "elapsedSec": 12
+    },
+    {
+      "textNum": 11,
+      "elapsedSec": 13
+    },
+    {
+      "textNum": 11,
+      "elapsedSec": 14
+    },
+    {
+      "textNum": 11,
+      "elapsedSec": 15
+    },
+    {
+      "textNum": 11,
+      "elapsedSec": 16
+    },
+    {
+      "textNum": 11,
+      "elapsedSec": 17
+    },
+    {
+      "textNum": 11,
+      "elapsedSec": 18
+    },
+    {
+      "textNum": 11,
+      "elapsedSec": 19
+    },
+    {
+      "textNum": 11,
+      "elapsedSec": 20
+    },
+    {
+      "textNum": 11,
+      "elapsedSec": 21
+    },
+    {
+      "textNum": 11,
+      "elapsedSec": 22
+    },
+    {
+      "textNum": 11,
+      "elapsedSec": 23
+    },
+    {
+      "textNum": 11,
+      "elapsedSec": 24
+    },
+    {
+      "textNum": 11,
+      "elapsedSec": 25
+    },
+    {
+      "textNum": 11,
+      "elapsedSec": 26
+    },
+    {
+      "textNum": 11,
+      "elapsedSec": 27
+    },
+    {
+      "textNum": 11,
+      "elapsedSec": 28
+    },
+    {
+      "textNum": 11,
+      "elapsedSec": 29
+    },
+    {
+      "textNum": 11,
+      "elapsedSec": 30
+    },
+    {
+      "textNum": 11,
+      "elapsedSec": 31
+    },
+    {
+      "textNum": 11,
+      "elapsedSec": 32
+    },
+    {
+      "textNum": 11,
+      "elapsedSec": 33
+    },
+    {
+      "textNum": 11,
+      "elapsedSec": 34
+    },
+    {
+      "textNum": 11,
+      "elapsedSec": 35
+    },
+    {
+      "textNum": 11,
+      "elapsedSec": 36
+    },
+    {
+      "textNum": 45,
+      "elapsedSec": 37
+    },
+    {
+      "textNum": 45,
+      "elapsedSec": 38
+    },
+    {
+      "textNum": 45,
+      "elapsedSec": 39
+    },
+    {
+      "textNum": 45,
+      "elapsedSec": 40
+    },
+    {
+      "textNum": 45,
+      "elapsedSec": 41
+    },
+    {
+      "textNum": 45,
+      "elapsedSec": 42
+    },
+    {
+      "textNum": 45,
+      "elapsedSec": 43
+    },
+    {
+      "textNum": 45,
+      "elapsedSec": 44
+    }
+  ],
+  "final text": "とりあえずどうかしら。おさえてあげるか涙も言ってみたい 想い出 あなたは一つ 捨てるけれど",
+  "generated text": [
+    {
+      "genTextResult": "にいるのは あなたのことが あの娘は 男の子守唄 俺のぬくもりに あゝ あなたに 甘えてくれた この",
+      "modelNum": 1,
+      "elapsedSec": 8
+    },
+    {
+      "genTextResult": "に ハイト・ロンド・エブリデイ・エブリデイ・エブリデイ・エイ・ラブリデイ・エイプ・エスカ・セイ・ライ",
+      "modelNum": 2,
+      "elapsedSec": 8
+    },
+    {
+      "genTextResult": "みつめるギャンスは 一番大阪 おさえてあげるか涙も言ってみたい 想い出 あなたは一つ 捨てるけれどこ",
+      "modelNum": 1,
+      "elapsedSec": 19
+    },
+    {
+      "genTextResult": "言われたらような 事が 悲しいことが 灰色でいいのに 出来るからさぽめらん　求めてくれよそんな淋しい",
+      "modelNum": 2,
+      "elapsedSec": 19
+    },
+    {
+      "genTextResult": " あなたを愛した今 大阪 あなたには こんな時が行くそれとも二人の愛を 熱いあのクセに かわいいため",
+      "modelNum": 1,
+      "elapsedSec": 43
+    },
+    {
+      "genTextResult": "　あなたが言わないで…きっと待っていたの?今は心の中に　バパなのね愛してる　あなたのこともっと嘘にな",
+      "modelNum": 2,
+      "elapsedSec": 43
+    }
+  ],
+  "generation info": [
+    {
+      "seedText": "とりあえず",
+      "elapsedSec": 5,
+      "genLength": 50,
+      "genTemp": 0.5
+    },
+    {
+      "seedText": "どうかしら",
+      "elapsedSec": 17,
+      "genLength": 50,
+      "genTemp": 0.87
+    },
+    {
+      "seedText": "あなたは一つ",
+      "elapsedSec": 40,
+      "genLength": 50,
+      "genTemp": 0.87
+    }
+  ]
+}
