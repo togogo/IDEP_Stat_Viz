@@ -167,6 +167,13 @@ group1GenNumTextAmountPlot <- ggplot(group1GenNumTextAmount, aes(x = genNum, y =
 #Number of Times Generated vs Text Amount...Group 1
 #
 
+withSystem1TextLength <- withSystem1['text amount count']$`text amount count`$textNum[length(withSystem1['text amount count']$`text amount count`$textNum)]
+
+withSystem1GenNum <- length(withSystem1['generation info']$`generation info`$elapsedSec)
+
+group3TextLength <- c(withSystem1TextLength)
+group3GenNum <- c(withSystem1GenNum)
+
 ###############################
 #                             #
 #      P L O T T I N G        #
