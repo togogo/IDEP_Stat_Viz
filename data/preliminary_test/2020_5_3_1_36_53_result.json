@@ -1,0 +1,350 @@
+{
+  "text amount count": [
+    {
+      "textNum": 0,
+      "elapsedSec": 0
+    },
+    {
+      "textNum": 1,
+      "elapsedSec": 1
+    },
+    {
+      "textNum": 26,
+      "elapsedSec": 2
+    },
+    {
+      "textNum": 26,
+      "elapsedSec": 3
+    },
+    {
+      "textNum": 26,
+      "elapsedSec": 4
+    },
+    {
+      "textNum": 26,
+      "elapsedSec": 5
+    },
+    {
+      "textNum": 26,
+      "elapsedSec": 6
+    },
+    {
+      "textNum": 26,
+      "elapsedSec": 7
+    },
+    {
+      "textNum": 26,
+      "elapsedSec": 8
+    },
+    {
+      "textNum": 26,
+      "elapsedSec": 9
+    },
+    {
+      "textNum": 26,
+      "elapsedSec": 10
+    },
+    {
+      "textNum": 26,
+      "elapsedSec": 11
+    },
+    {
+      "textNum": 26,
+      "elapsedSec": 12
+    },
+    {
+      "textNum": 26,
+      "elapsedSec": 13
+    },
+    {
+      "textNum": 26,
+      "elapsedSec": 14
+    },
+    {
+      "textNum": 26,
+      "elapsedSec": 15
+    },
+    {
+      "textNum": 26,
+      "elapsedSec": 16
+    }
+  ],
+  "final text": "fjeaiofejafioeajfioeafjeio",
+  "generated text": [
+    {
+      "genTextResult": "預けてくれればいいTO ME風にまぎれて",
+      "modelNum": 1,
+      "elapsedSec": 10
+    },
+    {
+      "genTextResult": "大きな",
+      "modelNum": 2,
+      "elapsedSec": 10
+    },
+    {
+      "genTextResult": "I'm crying for you涙を人には見せずに",
+      "modelNum": 3,
+      "elapsedSec": 10
+    },
+    {
+      "genTextResult": "君に会いたいみどりの瞳に僕は魅せられた湖に僕はひざまづきみどりの水に",
+      "modelNum": 1,
+      "elapsedSec": 12
+    },
+    {
+      "genTextResult": "何処に居ても",
+      "modelNum": 2,
+      "elapsedSec": 12
+    },
+    {
+      "genTextResult": "あしたは来ないでね暗闇の中のこの人は",
+      "modelNum": 3,
+      "elapsedSec": 12
+    },
+    {
+      "genTextResult": "あの空へ飛んで行くんだろうぼくがこんなに",
+      "modelNum": 1,
+      "elapsedSec": 13
+    },
+    {
+      "genTextResult": "おまえの失くした時間を探そう愚か者よ",
+      "modelNum": 2,
+      "elapsedSec": 13
+    },
+    {
+      "genTextResult": "心はめらめら燃えそう",
+      "modelNum": 3,
+      "elapsedSec": 13
+    },
+    {
+      "genTextResult": "明日が待ってても回り道して",
+      "modelNum": 1,
+      "elapsedSec": 13
+    },
+    {
+      "genTextResult": "酔わせてマンボ蝶のように羽のように二人でマンボ抱かれてマンボ",
+      "modelNum": 2,
+      "elapsedSec": 13
+    },
+    {
+      "genTextResult": "口紅をうつして",
+      "modelNum": 3,
+      "elapsedSec": 13
+    },
+    {
+      "genTextResult": "男と女のワザひけめなんて感じないで",
+      "modelNum": 1,
+      "elapsedSec": 13
+    },
+    {
+      "genTextResult": "出会った時のそんな心の",
+      "modelNum": 2,
+      "elapsedSec": 13
+    },
+    {
+      "genTextResult": "悲しみを感じててもあなたを愛してるからちょっと待って",
+      "modelNum": 3,
+      "elapsedSec": 13
+    },
+    {
+      "genTextResult": "とても素敵な名前と気づいた僕は上手に君を",
+      "modelNum": 1,
+      "elapsedSec": 14
+    },
+    {
+      "genTextResult": "君のために闘うよSmile baby汚れを知らない小鳥のようにStop the season in the sun心潤してくれいつまでも",
+      "modelNum": 2,
+      "elapsedSec": 14
+    },
+    {
+      "genTextResult": "あなたは年上の女",
+      "modelNum": 3,
+      "elapsedSec": 14
+    },
+    {
+      "genTextResult": "Mon amour思うまま Dancing",
+      "modelNum": 1,
+      "elapsedSec": 14
+    },
+    {
+      "genTextResult": "町並みつめていれば明日はいいことありそうな気がするだろうひとり寝の",
+      "modelNum": 2,
+      "elapsedSec": 14
+    },
+    {
+      "genTextResult": "夕べも小雨泣かせ上手",
+      "modelNum": 3,
+      "elapsedSec": 14
+    },
+    {
+      "genTextResult": "夢をごらんよ生まれて来なければ",
+      "modelNum": 1,
+      "elapsedSec": 15
+    },
+    {
+      "genTextResult": "雨が降る飲めば飲むほど",
+      "modelNum": 2,
+      "elapsedSec": 15
+    },
+    {
+      "genTextResult": "突然聞く誰も知る人のない",
+      "modelNum": 3,
+      "elapsedSec": 15
+    },
+    {
+      "genTextResult": "育った街だから星はまだ夜空いっぱい",
+      "modelNum": 1,
+      "elapsedSec": 15
+    },
+    {
+      "genTextResult": "運命かえて時という名の",
+      "modelNum": 2,
+      "elapsedSec": 15
+    },
+    {
+      "genTextResult": "北風吹く夜は未練盃",
+      "modelNum": 3,
+      "elapsedSec": 15
+    },
+    {
+      "genTextResult": "十六夜舟に霧にかすんだ",
+      "modelNum": 1,
+      "elapsedSec": 15
+    },
+    {
+      "genTextResult": "橋もない別れても",
+      "modelNum": 2,
+      "elapsedSec": 15
+    },
+    {
+      "genTextResult": "決して見せないわ光る風の中",
+      "modelNum": 3,
+      "elapsedSec": 15
+    },
+    {
+      "genTextResult": "気にしてるあんたも",
+      "modelNum": 1,
+      "elapsedSec": 16
+    },
+    {
+      "genTextResult": "理想の建築かごから逃げてく",
+      "modelNum": 2,
+      "elapsedSec": 16
+    },
+    {
+      "genTextResult": "カーテン揺らし君の窓辺で",
+      "modelNum": 3,
+      "elapsedSec": 16
+    }
+  ],
+  "generation info": [
+    {
+      "seedText": "",
+      "elapsedSec": 6,
+      "genLength": 50,
+      "genTemp": 0.5
+    },
+    {
+      "seedText": "",
+      "elapsedSec": 7,
+      "genLength": 50,
+      "genTemp": 0.5
+    },
+    {
+      "seedText": "",
+      "elapsedSec": 7,
+      "genLength": 50,
+      "genTemp": 0.5
+    },
+    {
+      "seedText": "",
+      "elapsedSec": 8,
+      "genLength": 50,
+      "genTemp": 0.5
+    },
+    {
+      "seedText": "",
+      "elapsedSec": 8,
+      "genLength": 50,
+      "genTemp": 0.5
+    },
+    {
+      "seedText": "",
+      "elapsedSec": 8,
+      "genLength": 50,
+      "genTemp": 0.5
+    },
+    {
+      "seedText": "",
+      "elapsedSec": 8,
+      "genLength": 50,
+      "genTemp": 0.5
+    },
+    {
+      "seedText": "eaiofejafioeajfioeaf",
+      "elapsedSec": 10,
+      "genLength": 50,
+      "genTemp": 0.5
+    },
+    {
+      "seedText": "eaiofejafioeajfioeaf",
+      "elapsedSec": 12,
+      "genLength": 50,
+      "genTemp": 0.5
+    },
+    {
+      "seedText": "eaiofejafioeajfioeaf",
+      "elapsedSec": 13,
+      "genLength": 50,
+      "genTemp": 0.5
+    },
+    {
+      "seedText": "eaiofejafioeajfioeaf",
+      "elapsedSec": 13,
+      "genLength": 50,
+      "genTemp": 0.5
+    },
+    {
+      "seedText": "eaiofejafioeajfioeaf",
+      "elapsedSec": 13,
+      "genLength": 50,
+      "genTemp": 0.5
+    },
+    {
+      "seedText": "eaiofejafioeajfioeaf",
+      "elapsedSec": 14,
+      "genLength": 50,
+      "genTemp": 0.5
+    },
+    {
+      "seedText": "eaiofejafioeajfioeaf",
+      "elapsedSec": 14,
+      "genLength": 50,
+      "genTemp": 0.5
+    },
+    {
+      "seedText": "eaiofejafioeajfioeaf",
+      "elapsedSec": 15,
+      "genLength": 50,
+      "genTemp": 0.5
+    },
+    {
+      "seedText": "eaiofejafioeajfioeaf",
+      "elapsedSec": 15,
+      "genLength": 50,
+      "genTemp": 0.5
+    },
+    {
+      "seedText": "eaiofejafioeajfioeaf",
+      "elapsedSec": 15,
+      "genLength": 50,
+      "genTemp": 0.5
+    },
+    {
+      "seedText": "eaiofejafioeajfioeaf",
+      "elapsedSec": 16,
+      "genLength": 50,
+      "genTemp": 0.5
+    }
+  ]
+}
