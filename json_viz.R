@@ -20,6 +20,10 @@ textCountYMax <- 750
 genNumMin <- 0
 genNumMax <- 25
 
+group1Num <- 8
+group2Num <- 4
+group3Num <- 4
+
 
 #############################
 #                           #
@@ -217,6 +221,85 @@ group3GenNumTextAmountPlot <- ggplot(group3GenNumTextAmount, aes(x = genNum, y =
 #P L O T 3
 #Average Seconds Spent among Groups
 
+#group1
+withAI1TotalTime <- length(withAI1['text amount count']$`text amount count`$elapsedSec)
+withAI2TotalTime <- length(withAI2_textNum['elapsedSec'])
+withAI3TotalTime <- length(withAI3['text amount count']$`text amount count`$elapsedSec)
+withAI4TotalTime <- length(withAI4['text amount count']$`text amount count`$elapsedSec)
+withAI5TotalTime <- length(withAI5['text amount count']$`text amount count`$elapsedSec)
+withAI6TotalTime <- length(withAI6['text amount count']$`text amount count`$elapsedSec)
+withAI7TotalTime <- length(withAI7['text amount count']$`text amount count`$elapsedSec)
+withAI8TotalTime <- length(withAI8['text amount count']$`text amount count`$elapsedSec)
+
+
+withAIAvgTime <- (withAI1TotalTime + withAI2TotalTime + withAI3TotalTime + withAI4TotalTime + withAI5TotalTime + withAI6TotalTime + withAI7TotalTime + withAI8TotalTime)/group1Num
+
+#group2
+noAI1TotalTime <- length(noAI1['text amount count']$`text amount count`$elapsedSec)
+noAI2TotalTime <- length(noAI2['text amount count']$`text amount count`$elapsedSec)
+noAI3TotalTime <- length(noAI3['text amount count']$`text amount count`$elapsedSec)
+noAI4TotalTime <- length(noAI4['text amount count']$`text amount count`$elapsedSec)
+
+noAIAvgTime <- (noAI1TotalTime + noAI2TotalTime + noAI3TotalTime + noAI4TotalTime)/group2Num
+
+#group3
+withSystem1TotalTime <- length(withSystem1['text amount count']$`text amount count`$elapsedSec)
+withSystem2TotalTime <- length(withSystem2['text amount count']$`text amount count`$elapsedSec)
+withSystem3TotalTime <- length(withSystem3['text amount count']$`text amount count`$elapsedSec)
+withSystem4TotalTime <- length(withSystem4['text amount count']$`text amount count`$elapsedSec)
+
+withSystemAvgTime <- (withSystem1TotalTime + withSystem2TotalTime + withSystem3TotalTime + withSystem4TotalTime)/group3Num
+
+avgTime <- data.frame(group = c("group 1", "group 2", "group 3"), time = c(withAIAvgTime, noAIAvgTime, withSystemAvgTime))
+
+avgTimePlot <- ggplot(avgTime, aes(x = group, y = time, fill = group)) + geom_bar(stat = "identity") +
+  labs(title = "Group 1 + Group 2 + Group 3", subtitle = "Average Input Time Among Groups") +
+  xlab("Groups") +
+  ylab("Total Input Time")
+
+#-----------------------------------------------------------------------------------------
+#P L O T 4
+#Average Amount of Text Input
+
+#group1 
+withAIAvgText <- sum(group1TextLength) / group1Num
+
+#group2
+noAI1TextLength <- noAI1['text amount count']$`text amount count`$textNum[length(noAI1['text amount count']$`text amount count`$textNum)]
+noAI2TextLength <- noAI2['text amount count']$`text amount count`$textNum[length(noAI2['text amount count']$`text amount count`$textNum)]
+noAI3TextLength <- noAI3['text amount count']$`text amount count`$textNum[length(noAI3['text amount count']$`text amount count`$textNum)]
+noAI4TextLength <- noAI4['text amount count']$`text amount count`$textNum[length(noAI4['text amount count']$`text amount count`$textNum)]
+
+group2TextLength <- c(noAI1TextLength, noAI2TextLength, noAI3TextLength, noAI4TextLength)
+
+noAIAvgText <- sum(group2TextLength) / group2Num
+
+#grup3
+withSystemAvgText <- sum(group3TextLength) / group3Num
+
+avgText <- data.frame(group = c("group 1", "group 2", "group 3"), time = c(withAIAvgText, noAIAvgText, withSystemAvgText))
+
+avgTextPlot <- ggplot(avgText, aes(x = group, y = time, fill = group)) + geom_bar(stat = "identity") +
+  labs(title = "Group 1 + Group 2 + Group 3", subtitle = "Average Text Amount Among Groups") +
+  xlab("Groups") +
+  ylab("Total Text Amount")
+
+#-----------------------------------------------------------------------------------------
+#P L O T 5
+#Avgerage Rate of Text Input / Second
+
+withAIAvgRate <- withAIAvgText / withAIAvgTime
+noAIAvgRate <- noAIAvgText / noAIAvgTime
+withSystemAvgRate <- withSystemAvgText / withSystemAvgTime
+
+avgRate <- data.frame(group = c("group 1", "group 2", "group 3"), rate = c(withAIAvgRate, noAIAvgRate, withSystemAvgRate))
+
+avgRatePlot <- ggplot(avgRate, aes(x = group, y = rate, fill = group)) + geom_bar(stat = "identity") +
+  labs(title = "Group 1 + Group 2 + Group 3", subtitle = "Average Rate of Text Input per Second") +
+  xlab("Groups") +
+  ylab("Text Input Rate per Second")
+
+
 ###############################
 #                             #
 #      P L O T T I N G        #
@@ -234,12 +317,17 @@ group3GenNumTextAmountPlot
 grid.arrange(group1GenNumTextAmountPlot, group3GenNumTextAmountPlot, nrow = 2)
 
 
+avgTimePlot
+avgTextPlot
+avgRatePlot
+grid.arrange(avgTimePlot, avgTextPlot, avgRatePlot, nrow = 3)
+
+
 ###############################
 #                             #
 #  P L O T   S A V I N G      #
 #                             #
 ###############################
-
 
 
 # will use it later...
