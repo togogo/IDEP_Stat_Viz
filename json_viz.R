@@ -21,9 +21,9 @@ textCountYMax <- 750
 genNumMin <- 0
 genNumMax <- 25
 
-group1Num <- 9
+group1Num <- 10
 group2Num <- 10
-group3Num <- 8#6 in reality
+group3Num <- 10
 
 histScoreMin <- 0
 histScoreMax <- 10
@@ -50,12 +50,14 @@ sub2Adjusted <- data.frame(textNum = sub2$`text amount count`['textNum'], elapse
 withAI2_textNum <- rbind(sub1$`text amount count`, sub2Adjusted)
 withAI3 = fromJSON("./data/group1_with_ai/with_ai_subject3_2020_4_28_23_59_37_result.json")#With AI, Subject 3 (Nadya Kirillova)
 withAI_error = fromJSON("./data/group1_with_ai/with_ai_subject_error_2020_4_29_6_52_5_result.json")#With AI, Subject 4 (Takuma Kudo)....data insufficient
-withAI4 = fromJSON("./data/group1_with_ai/with_ai_subject4_2020_4_30_0_50_11_result.json")#With AI, Subject 4 (Ryusuke Nanki)
+#withAI4 = fromJSON("./data/group1_with_ai/with_ai_subject4_2020_4_30_0_50_11_result.json")#With AI, Subject 4 (Ryusuke Nanki)
+withAI4 = fromJSON("./data/group1_with_ai/with_ai_subject7_2020_4_30_17_17_2_result.json")#With AI, Subject 4 (Ryoko Matsuoka Baba)
 withAI5 = fromJSON("./data/group1_with_ai/with_ai_subject5_2020_4_30_15_39_33_result.json")#With AI, Subject 5 (Yuki Wada)
 withAI6 = fromJSON("./data/group1_with_ai/with_ai_subject6_2020_4_30_14_36_44_result.json")#With AI, Subject 6 (Kanako Wada)
-withAI7 = fromJSON("./data/group1_with_ai/with_ai_subject7_2020_4_30_17_17_2_result.json")#With AI, Subject 7 (Ryoko Matsuoka Baba)
+withAI7 = fromJSON("./data/group1_with_ai/with_ai_subject1_2020_5_6_13_33_25_result.json")#With AI, Subject 7 (Hiroki Baba)
 withAI8 = fromJSON("./data/group1_with_ai/with_ai_subject8_2020_5_2_19_18_18_result.json")#With AI, Subject 8 (Kyoko Yonezawa)
 withAI9 = fromJSON("./data/group1_with_ai/with_ai_subject9_2020_5_5_19_12_40_result.json")#With AI, Subject 9 (Toru Urakawa)
+withAI10 = fromJSON("./data/group1_with_ai/with_ai_subject10_2020_5_6_10_41_56_result.json")#With AI, Subject 10 (Natsumi Wada)
 
 #NO AI(Group 2)
 noAI1 = fromJSON("./data/group2_no_help/no_help_subject1_2020_4_27_0_8_7_result.json")#No Help, Subject 1 (Yuka Kida)
@@ -64,8 +66,10 @@ noAI3 = fromJSON("./data/group2_no_help/no_help_subject3_2020_4_28_6_12_35_resul
 noAI4 = fromJSON("./data/group2_no_help/no_help_subject4_2020_5_1_13_31_0_result.json")#No Help, Subject 4 (Shota Ekuni)
 noAI5 = fromJSON("./data/group2_no_help/no_help_subject5_2020_5_3_7_27_25_result.json")#No Help, Subject 5 (Masahiro Iwata)
 noAI6 = fromJSON("./data/group2_no_help/no_help_subject6_2020_5_4_11_14_19_result.json")#No Help, Subject 6 (Rie Furuta)
-noAI7 = fromJSON("./data/group2_no_help/no_help_subject7_2020_5_5_3_43_44_result.json")#No Help, Subject 7 (Naomi Okamura)
-noAI8 = fromJSON("./data/group2_no_help/no_help_subject8_2020_5_5_5_49_26_result.json")#No Help, Subject 8 (Takaaki Koshiba)
+#noAI7 = fromJSON("./data/group2_no_help/no_help_subject7_2020_5_5_3_43_44_result.json")#No Help, Subject 7 (Naomi Okamura)
+noAI7 = fromJSON("./data/group2_no_help/no_help_subject7_2020_5_8_4_47_37_result.json")#No Help, Subject 7 (Naomi Okamura)
+#noAI8 = fromJSON("./data/group2_no_help/no_help_subject8_2020_5_5_5_49_26_result.json")#No Help, Subject 8 (Takaaki Koshiba)
+noAI8 = fromJSON("./data/group2_no_help/no_help_subject8_2020_5_6_20_33_3_result.json")#No Help, Subject 8 (Ryuto Satoshi)
 noAI9 = fromJSON("./data/group2_no_help/no_help_subject9_2020_5_5_12_30_8_result.json")#No Help, Subject 9 (Chiharu Kai)
 noAI10 = fromJSON("./data/group2_no_help/no_help_subject10_2020_5_5_18_43_10_result.json")#No Help, Subject 10 (Rai Yoshitoki)
 
@@ -78,7 +82,11 @@ withSystem4 = fromJSON("./data/group3_with_random/with_random_subject4_2020_5_1_
 withSystem5 = fromJSON("./data/group3_with_random/with_random_subject5_2020_5_3_23_25_55_result.json")#with system, Subject 5 (Takashi Koyama)
 withSystem6 = fromJSON("./data/group3_with_random/with_random_subject6_2020_5_4_21_50_19_result.json")#with system, Subject 6 (Rei Hanada)
 withSystem7 = fromJSON("./data/group3_with_random/with_random_subject7_2020_5_4_15_8_34_result.json")#with system, Subject 7 (Aya Matsubara)
-withSystem8 = fromJSON("./data/group3_with_random/with_random_subject7_2020_5_4_15_8_34_result.json")#with system, Subject 8 (Maiya Kinoshita)
+withSystem8 = fromJSON("./data/group3_with_random/with_random_subject8_2020_5_5_16_4_0_result.json")#with system, Subject 8 (Maiya Kinoshita)
+withSystem9 = fromJSON("./data/group3_with_random/with_random_subject11_2020_5_7_10_11_52_result.json")#with system, Subject 9 (Takuya Kodama)
+#withSystem9 = fromJSON("./data/group3_with_random/with_random_subject9_2020_5_6_12_26_32_result.json")#with system, Subject 9 (Shuji Shibata)
+withSystem10 = fromJSON("./data/group3_with_random/with_random_subject10_2020_5_7_11_20_3_result.json")#with system, Subject 10 (Akira Suzuki)
+
 
 #post-questionnaire
 test_post_gr1_gr3 <- read_excel("./data/post/test_post_gr1_gr3.xlsx",sheet=1)#for testing purposes...
@@ -109,11 +117,12 @@ group1_sub6 <- data.frame(sub6 = withAI6['text amount count']$`text amount count
 group1_sub7 <- data.frame(sub7 = withAI7['text amount count']$`text amount count`$textNum)
 group1_sub8 <- data.frame(sub8 = withAI8['text amount count']$`text amount count`$textNum)
 group1_sub9 <- data.frame(sub9 = withAI9['text amount count']$`text amount count`$textNum)
+group1_sub10 <- data.frame(sub10 = withAI10['text amount count']$`text amount count`$textNum)
 
-group1_textNum_Combined_Data <- cbindX(group1_x, group1_sub1, group1_sub2, group1_sub3, group1_sub4, group1_sub5, group1_sub6, group1_sub7, group1_sub8, group1_sub9)
+group1_textNum_Combined_Data <- cbindX(group1_x, group1_sub1, group1_sub2, group1_sub3, group1_sub4, group1_sub5, group1_sub6, group1_sub7, group1_sub8, group1_sub9, group1_sub10)
 
 group1_textNumPlot <- ggplot(group1_textNum_Combined_Data, aes(x = x), color = "subjects") + 
-  labs(title = "Group 1(with the assistance of AI models)", subtitle = "Elapsed Seconds vs Total Amount of Text Entered", caption = "n = 9") +
+  labs(title = "Group 1(with the assistance of AI models)", subtitle = "Elapsed Seconds vs Total Amount of Text Entered", caption = "n = 10") +
   xlab("Elapsed Seconds") +
   ylab("Total Amount of Text") +
   ylim(textCountYMin, textCountYMax) +
@@ -125,7 +134,8 @@ group1_textNumPlot <- ggplot(group1_textNum_Combined_Data, aes(x = x), color = "
   geom_line(aes(y = sub6, color = "sub6")) +
   geom_line(aes(y = sub7, color = "sub7")) +
   geom_line(aes(y = sub8, color = "sub8")) +
-  geom_line(aes(y = sub9, color = "sub9"))
+  geom_line(aes(y = sub9, color = "sub9")) +
+  geom_line(aes(y = sub10, color = "sub10"))
 
   
 #
@@ -172,11 +182,14 @@ group3_sub4 <- data.frame(sub4 = withSystem4['text amount count']$`text amount c
 group3_sub5 <- data.frame(sub5 = withSystem5['text amount count']$`text amount count`$textNum)
 group3_sub6 <- data.frame(sub6 = withSystem6['text amount count']$`text amount count`$textNum)
 group3_sub7 <- data.frame(sub7 = withSystem7['text amount count']$`text amount count`$textNum)
+group3_sub8 <- data.frame(sub8 = withSystem8['text amount count']$`text amount count`$textNum)
+group3_sub9 <- data.frame(sub9 = withSystem9['text amount count']$`text amount count`$textNum)
+group3_sub10 <- data.frame(sub10 = withSystem10['text amount count']$`text amount count`$textNum)
 
-group3_textNum_Combined_Data <- cbindX(group3_x, group3_sub1, group3_sub2, group3_sub3, group3_sub4, group3_sub5, group3_sub6, group3_sub7)
+group3_textNum_Combined_Data <- cbindX(group3_x, group3_sub1, group3_sub2, group3_sub3, group3_sub4, group3_sub5, group3_sub6, group3_sub7, group3_sub8, group3_sub9, group3_sub10)
 
 group3_textNumPlot <- ggplot(group3_textNum_Combined_Data, aes(x = x)) + 
-  labs(title = "Group 3(with the assistance of randomly selected phrases)", subtitle = "Elapsed Seconds vs Total Amount of Text Entered", caption = "n = 7") +
+  labs(title = "Group 3(with the assistance of randomly selected phrases)", subtitle = "Elapsed Seconds vs Total Amount of Text Entered", caption = "n = 10") +
   xlab("Elapsed Seconds") +
   ylab("Total Amount of Text") +
   ylim(textCountYMin, textCountYMax) +
@@ -186,7 +199,10 @@ group3_textNumPlot <- ggplot(group3_textNum_Combined_Data, aes(x = x)) +
   geom_line(aes(y = sub4, color = "sub4")) +
   geom_line(aes(y = sub5, color = "sub5")) +
   geom_line(aes(y = sub6, color = "sub6")) +
-  geom_line(aes(y = sub7, color = "sub7"))
+  geom_line(aes(y = sub7, color = "sub7")) +
+  geom_line(aes(y = sub8, color = "sub8")) +
+  geom_line(aes(y = sub9, color = "sub9")) +
+  geom_line(aes(y = sub10, color = "sub10"))
 
 
 
@@ -203,6 +219,7 @@ withAI6TextLength <- withAI6['text amount count']$`text amount count`$textNum[le
 withAI7TextLength <- withAI7['text amount count']$`text amount count`$textNum[length(withAI7['text amount count']$`text amount count`$textNum)]
 withAI8TextLength <- withAI8['text amount count']$`text amount count`$textNum[length(withAI8['text amount count']$`text amount count`$textNum)]
 withAI9TextLength <- withAI9['text amount count']$`text amount count`$textNum[length(withAI9['text amount count']$`text amount count`$textNum)]
+withAI10TextLength <- withAI10['text amount count']$`text amount count`$textNum[length(withAI10['text amount count']$`text amount count`$textNum)]
 
 withAI1GenNum <- length(withAI1['generation info']$`generation info`$elapsedSec)
 withAI2GenNum <- 12 #you know what, just hard code it...get stuff done matters more now!!!
@@ -213,14 +230,15 @@ withAI6GenNum <- length(withAI6['generation info']$`generation info`$elapsedSec)
 withAI7GenNum <- length(withAI7['generation info']$`generation info`$elapsedSec)
 withAI8GenNum <- length(withAI8['generation info']$`generation info`$elapsedSec)
 withAI9GenNum <- length(withAI9['generation info']$`generation info`$elapsedSec)
+withAI10GenNum <- length(withAI10['generation info']$`generation info`$elapsedSec)
 
-group1TextLength <- c(withAI1TextLength, withAI2TextLength, withAI3TextLength, withAI4TextLength, withAI5TextLength, withAI6TextLength, withAI7TextLength, withAI8TextLength, withAI9TextLength)
-group1GenNum <- c(withAI1GenNum, withAI2GenNum, withAI3GenNum, withAI4GenNum, withAI5GenNum, withAI6GenNum, withAI7GenNum, withAI8GenNum, withAI9GenNum)
+group1TextLength <- c(withAI1TextLength, withAI2TextLength, withAI3TextLength, withAI4TextLength, withAI5TextLength, withAI6TextLength, withAI7TextLength, withAI8TextLength, withAI9TextLength, withAI10TextLength)
+group1GenNum <- c(withAI1GenNum, withAI2GenNum, withAI3GenNum, withAI4GenNum, withAI5GenNum, withAI6GenNum, withAI7GenNum, withAI8GenNum, withAI9GenNum, withAI10GenNum)
 
 group1GenNumTextAmount <- data.frame(genNum = group1GenNum, totalText = group1TextLength)
 
 group1GenNumTextAmountPlot <- ggplot(group1GenNumTextAmount, aes(x = genNum, y = totalText)) +
-  labs(title = "Group 1(with the assistance of AI models)", subtitle = "Number of Times Suggestion Generated vs Total Amount of Text Entered", caption = "n = 9") +
+  labs(title = "Group 1(with the assistance of AI models)", subtitle = "Number of Times Suggestion Generated vs Total Amount of Text Entered", caption = "n = 10") +
   xlab("Number of Times Suggestion Generated") +
   ylab("Total Amount of Text") +
   ylim(textCountYMin, textCountYMax) +
@@ -239,6 +257,9 @@ withSystem4TextLength <- withSystem4['text amount count']$`text amount count`$te
 withSystem5TextLength <- withSystem5['text amount count']$`text amount count`$textNum[length(withSystem5['text amount count']$`text amount count`$textNum)]
 withSystem6TextLength <- withSystem6['text amount count']$`text amount count`$textNum[length(withSystem6['text amount count']$`text amount count`$textNum)]
 withSystem7TextLength <- withSystem7['text amount count']$`text amount count`$textNum[length(withSystem7['text amount count']$`text amount count`$textNum)]
+withSystem8TextLength <- withSystem8['text amount count']$`text amount count`$textNum[length(withSystem8['text amount count']$`text amount count`$textNum)]
+withSystem9TextLength <- withSystem9['text amount count']$`text amount count`$textNum[length(withSystem9['text amount count']$`text amount count`$textNum)]
+withSystem10TextLength <- withSystem10['text amount count']$`text amount count`$textNum[length(withSystem10['text amount count']$`text amount count`$textNum)]
 
 withSystem1GenNum <- length(withSystem1['generation info']$`generation info`$elapsedSec)
 withSystem2GenNum <- length(withSystem2['generation info']$`generation info`$elapsedSec)
@@ -247,14 +268,21 @@ withSystem4GenNum <- length(withSystem4['generation info']$`generation info`$ela
 withSystem5GenNum <- length(withSystem5['generation info']$`generation info`$elapsedSec)
 withSystem6GenNum <- length(withSystem6['generation info']$`generation info`$elapsedSec)
 withSystem7GenNum <- length(withSystem7['generation info']$`generation info`$elapsedSec)
+withSystem8GenNum <- length(withSystem8['generation info']$`generation info`$elapsedSec)
+withSystem9GenNum <- length(withSystem9['generation info']$`generation info`$elapsedSec)
+withSystem10GenNum <- length(withSystem10['generation info']$`generation info`$elapsedSec)
 
-group3TextLength <- c(withSystem1TextLength, withSystem2TextLength, withSystem3TextLength, withSystem4TextLength, withSystem5TextLength, withSystem6TextLength, withSystem7TextLength)
-group3GenNum <- c(withSystem1GenNum, withSystem2GenNum, withSystem3GenNum, withSystem4GenNum, withSystem5GenNum, withSystem6GenNum, withSystem7GenNum)
+group3TextLength <- c(withSystem1TextLength, withSystem2TextLength, withSystem3TextLength, withSystem4TextLength, withSystem5TextLength, withSystem6TextLength, withSystem7TextLength, withSystem8TextLength, withSystem9TextLength, withSystem10TextLength)
+group3GenNum <- c(withSystem1GenNum, withSystem2GenNum, withSystem3GenNum, withSystem4GenNum, withSystem5GenNum, withSystem6GenNum, withSystem7GenNum, withSystem8GenNum, withSystem9GenNum, withSystem10GenNum)
+
+#alternative
+#group3TextLength <- c(withSystem1TextLength, withSystem3TextLength,  withSystem5TextLength, withSystem6TextLength, withSystem7TextLength)
+#group3GenNum <- c(withSystem1GenNum, withSystem3GenNum, withSystem5GenNum, withSystem6GenNum, withSystem7GenNum)
 
 group3GenNumTextAmount <- data.frame(genNum = group3GenNum, totalText = group3TextLength)
 
 group3GenNumTextAmountPlot <- ggplot(group3GenNumTextAmount, aes(x = genNum, y = totalText)) +
-  labs(title = "Group 3(with the assistance of randomly selected phrases)", subtitle = "Number of Times Suggestion Generated vs Total Amount of Text Entered", caption = "n = 7") +
+  labs(title = "Group 3(with the assistance of randomly selected phrases)", subtitle = "Number of Times Suggestion Generated vs Total Amount of Text Entered", caption = "n = 10") +
   xlab("Number of Times Suggestion Generated") +
   ylab("Total Amount of Text") +
   ylim(textCountYMin, textCountYMax) +
@@ -277,9 +305,10 @@ withAI6TotalTime <- length(withAI6['text amount count']$`text amount count`$elap
 withAI7TotalTime <- length(withAI7['text amount count']$`text amount count`$elapsedSec)
 withAI8TotalTime <- length(withAI8['text amount count']$`text amount count`$elapsedSec)
 withAI9TotalTime <- length(withAI9['text amount count']$`text amount count`$elapsedSec)
+withAI10TotalTime <- length(withAI10['text amount count']$`text amount count`$elapsedSec)
 
 
-withAIAvgTime <- (withAI1TotalTime + withAI2TotalTime + withAI3TotalTime + withAI4TotalTime + withAI5TotalTime + withAI6TotalTime + withAI7TotalTime + withAI8TotalTime  + withAI9TotalTime)/group1Num
+withAIAvgTime <- (withAI1TotalTime + withAI2TotalTime + withAI3TotalTime + withAI4TotalTime + withAI5TotalTime + withAI6TotalTime + withAI7TotalTime + withAI8TotalTime + withAI9TotalTime + withAI10TotalTime)/group1Num
 
 #group2
 noAI1TotalTime <- length(noAI1['text amount count']$`text amount count`$elapsedSec)
@@ -303,8 +332,11 @@ withSystem4TotalTime <- length(withSystem4['text amount count']$`text amount cou
 withSystem5TotalTime <- length(withSystem5['text amount count']$`text amount count`$elapsedSec)
 withSystem6TotalTime <- length(withSystem6['text amount count']$`text amount count`$elapsedSec)
 withSystem7TotalTime <- length(withSystem7['text amount count']$`text amount count`$elapsedSec)
+withSystem8TotalTime <- length(withSystem8['text amount count']$`text amount count`$elapsedSec)
+withSystem9TotalTime <- length(withSystem9['text amount count']$`text amount count`$elapsedSec)
+withSystem10TotalTime <- length(withSystem10['text amount count']$`text amount count`$elapsedSec)
 
-withSystemAvgTime <- (withSystem1TotalTime + withSystem2TotalTime + withSystem3TotalTime + withSystem4TotalTime + withSystem5TotalTime + withSystem6TotalTime + withSystem7TotalTime)/group3Num
+withSystemAvgTime <- (withSystem1TotalTime + withSystem2TotalTime + withSystem3TotalTime + withSystem4TotalTime + withSystem5TotalTime + withSystem6TotalTime + withSystem7TotalTime + withSystem8TotalTime + withSystem9TotalTime + withSystem10TotalTime)/group3Num
 
 avgTime <- data.frame(group = c("group 1", "group 2", "group 3"), time = c(withAIAvgTime, noAIAvgTime, withSystemAvgTime))
 
