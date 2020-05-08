@@ -25,7 +25,7 @@ group1Num <- 10
 group2Num <- 10
 group3Num <- 10
 
-histScoreMin <- 0
+histScoreMin <- 1
 histScoreMax <- 10
 
 
@@ -92,6 +92,8 @@ withSystem10 = fromJSON("./data/group3_with_random/with_random_subject10_2020_5_
 test_post_gr1_gr3 <- read_excel("./data/post/test_post_gr1_gr3.xlsx",sheet=1)#for testing purposes...
 test_post_gr2 <- read_excel("./data/post/test_post_gr2.xlsx", sheet = 1)#for testing purposes...
 
+post_gr2 <- read_excel("./data/post/post_gr2.xlsx", sheet = 1)
+post_gr1_gr3 <- read_excel("./data/post/post_gr1_gr3.xlsx", sheet = 1)
 
 ###############################
 #                             #
@@ -122,20 +124,20 @@ group1_sub10 <- data.frame(sub10 = withAI10['text amount count']$`text amount co
 group1_textNum_Combined_Data <- cbindX(group1_x, group1_sub1, group1_sub2, group1_sub3, group1_sub4, group1_sub5, group1_sub6, group1_sub7, group1_sub8, group1_sub9, group1_sub10)
 
 group1_textNumPlot <- ggplot(group1_textNum_Combined_Data, aes(x = x), color = "subjects") + 
-  labs(title = "Group 1(with the assistance of AI models)", subtitle = "Elapsed Seconds vs Total Amount of Text Entered", caption = "n = 10") +
+  labs(title = "Elapsed Seconds vs Total Amount of Text Entered", subtitle = "With the assistance of AI models(group 1)", caption = "n = 10") +
   xlab("Elapsed Seconds") +
   ylab("Total Amount of Text") +
   ylim(textCountYMin, textCountYMax) +
-  geom_line(aes(y = sub1, color = "sub1")) + 
-  geom_line(aes(y = sub2, color = "sub2")) + 
-  geom_line(aes(y = sub3, color = "sub3")) +
-  geom_line(aes(y = sub4, color = "sub4")) +
-  geom_line(aes(y = sub5, color = "sub5")) + 
-  geom_line(aes(y = sub6, color = "sub6")) +
-  geom_line(aes(y = sub7, color = "sub7")) +
-  geom_line(aes(y = sub8, color = "sub8")) +
-  geom_line(aes(y = sub9, color = "sub9")) +
-  geom_line(aes(y = sub10, color = "sub10"))
+  geom_line(aes(y = sub1, color = "01")) + 
+  geom_line(aes(y = sub2, color = "02")) + 
+  geom_line(aes(y = sub3, color = "03")) +
+  geom_line(aes(y = sub4, color = "04")) +
+  geom_line(aes(y = sub5, color = "05")) + 
+  geom_line(aes(y = sub6, color = "06")) +
+  geom_line(aes(y = sub7, color = "07")) +
+  geom_line(aes(y = sub8, color = "08")) +
+  geom_line(aes(y = sub9, color = "09")) +
+  geom_line(aes(y = sub10, color = "10"))
 
   
 #
@@ -156,20 +158,20 @@ group2_sub10 <- data.frame(sub10 = noAI10['text amount count']$`text amount coun
 group2_textNum_Combined_Data <- cbindX(group2_x, group2_sub1, group2_sub2, group2_sub3, group2_sub4, group2_sub5, group2_sub6, group2_sub7, group2_sub8, group2_sub9, group2_sub10)
 
 group2_textNumPlot <- ggplot(group2_textNum_Combined_Data, aes(x = x)) + 
-  labs(title = "Group 2(without any form of assistance)", subtitle = "Elapsed Seconds vs Total Amount of Text Entered", caption = "n = 10") +
+  labs(title = "Elapsed Seconds vs Total Amount of Text Entered", subtitle = "Without any form of assistance(group 2)", caption = "n = 10") +
   xlab("Elapsed Seconds") +
   ylab("Total Amount of Text") +
   ylim(textCountYMin, textCountYMax) +
-  geom_line(aes(y = sub1, color = "sub1")) + 
-  geom_line(aes(y = sub2, color = "sub2")) + 
-  geom_line(aes(y = sub3, color = "sub3")) +
-  geom_line(aes(y = sub4, color = "sub4")) +
-  geom_line(aes(y = sub5, color = "sub5")) + 
-  geom_line(aes(y = sub6, color = "sub6")) +
-  geom_line(aes(y = sub7, color = "sub7")) +
-  geom_line(aes(y = sub8, color = "sub8")) +
-  geom_line(aes(y = sub9, color = "sub9")) +
-  geom_line(aes(y = sub10, color = "sub10"))
+  geom_line(aes(y = sub1, color = "01")) + 
+  geom_line(aes(y = sub2, color = "02")) + 
+  geom_line(aes(y = sub3, color = "03")) +
+  geom_line(aes(y = sub4, color = "04")) +
+  geom_line(aes(y = sub5, color = "05")) + 
+  geom_line(aes(y = sub6, color = "06")) +
+  geom_line(aes(y = sub7, color = "07")) +
+  geom_line(aes(y = sub8, color = "08")) +
+  geom_line(aes(y = sub9, color = "09")) +
+  geom_line(aes(y = sub10, color = "10"))
 
 #
 #NO RANDOM (Group 3)
@@ -189,20 +191,20 @@ group3_sub10 <- data.frame(sub10 = withSystem10['text amount count']$`text amoun
 group3_textNum_Combined_Data <- cbindX(group3_x, group3_sub1, group3_sub2, group3_sub3, group3_sub4, group3_sub5, group3_sub6, group3_sub7, group3_sub8, group3_sub9, group3_sub10)
 
 group3_textNumPlot <- ggplot(group3_textNum_Combined_Data, aes(x = x)) + 
-  labs(title = "Group 3(with the assistance of randomly selected phrases)", subtitle = "Elapsed Seconds vs Total Amount of Text Entered", caption = "n = 10") +
+  labs(title = "Elapsed Seconds vs Total Amount of Text Entered", subtitle = "With the assistance of randomly selected phrases(group 3)", caption = "n = 10") +
   xlab("Elapsed Seconds") +
   ylab("Total Amount of Text") +
   ylim(textCountYMin, textCountYMax) +
-  geom_line(aes(y = sub1, color = "sub1")) +
-  geom_line(aes(y = sub2, color = "sub2")) +
-  geom_line(aes(y = sub3, color = "sub3")) +
-  geom_line(aes(y = sub4, color = "sub4")) +
-  geom_line(aes(y = sub5, color = "sub5")) +
-  geom_line(aes(y = sub6, color = "sub6")) +
-  geom_line(aes(y = sub7, color = "sub7")) +
-  geom_line(aes(y = sub8, color = "sub8")) +
-  geom_line(aes(y = sub9, color = "sub9")) +
-  geom_line(aes(y = sub10, color = "sub10"))
+  geom_line(aes(y = sub1, color = "01")) +
+  geom_line(aes(y = sub2, color = "02")) +
+  geom_line(aes(y = sub3, color = "03")) +
+  geom_line(aes(y = sub4, color = "04")) +
+  geom_line(aes(y = sub5, color = "05")) +
+  geom_line(aes(y = sub6, color = "06")) +
+  geom_line(aes(y = sub7, color = "07")) +
+  geom_line(aes(y = sub8, color = "08")) +
+  geom_line(aes(y = sub9, color = "09")) +
+  geom_line(aes(y = sub10, color = "10"))
 
 
 
@@ -238,7 +240,7 @@ group1GenNum <- c(withAI1GenNum, withAI2GenNum, withAI3GenNum, withAI4GenNum, wi
 group1GenNumTextAmount <- data.frame(genNum = group1GenNum, totalText = group1TextLength)
 
 group1GenNumTextAmountPlot <- ggplot(group1GenNumTextAmount, aes(x = genNum, y = totalText)) +
-  labs(title = "Group 1(with the assistance of AI models)", subtitle = "Number of Times Suggestion Generated vs Total Amount of Text Entered", caption = "n = 10") +
+  labs(title = "Number of Times Suggestion Generated vs Total Amount of Text Entered", subtitle = "With the assistance of AI models(group1)", caption = "n = 10") +
   xlab("Number of Times Suggestion Generated") +
   ylab("Total Amount of Text") +
   ylim(textCountYMin, textCountYMax) +
@@ -282,7 +284,7 @@ group3GenNum <- c(withSystem1GenNum, withSystem2GenNum, withSystem3GenNum, withS
 group3GenNumTextAmount <- data.frame(genNum = group3GenNum, totalText = group3TextLength)
 
 group3GenNumTextAmountPlot <- ggplot(group3GenNumTextAmount, aes(x = genNum, y = totalText)) +
-  labs(title = "Group 3(with the assistance of randomly selected phrases)", subtitle = "Number of Times Suggestion Generated vs Total Amount of Text Entered", caption = "n = 10") +
+  labs(title = "Number of Times Suggestion Generated vs Total Amount of Text Entered", subtitle = "With the assistance of randomly selected phrases(group 3)", caption = "n = 10") +
   xlab("Number of Times Suggestion Generated") +
   ylab("Total Amount of Text") +
   ylim(textCountYMin, textCountYMax) +
@@ -341,7 +343,7 @@ withSystemAvgTime <- (withSystem1TotalTime + withSystem2TotalTime + withSystem3T
 avgTime <- data.frame(group = c("group 1", "group 2", "group 3"), time = c(withAIAvgTime, noAIAvgTime, withSystemAvgTime))
 
 avgTimePlot <- ggplot(avgTime, aes(x = group, y = time, fill = group)) + geom_bar(stat = "identity") +
-  labs(title = "Group 1 + Group 2 + Group 3", subtitle = "Average Input Time Among Groups") +
+  labs(title = "Average Input Time Among Groups", subtitle = "With AI(group 1) vs With No AI(group 2) vs With Dummy(group 3)") +
   xlab("Groups") +
   ylab("Total Input Time")
 
@@ -374,7 +376,7 @@ withSystemAvgText <- sum(group3TextLength) / group3Num
 avgText <- data.frame(group = c("group 1", "group 2", "group 3"), time = c(withAIAvgText, noAIAvgText, withSystemAvgText))
 
 avgTextPlot <- ggplot(avgText, aes(x = group, y = time, fill = group)) + geom_bar(stat = "identity") +
-  labs(title = "Group 1 + Group 2 + Group 3", subtitle = "Average Text Amount Among Groups") +
+  labs(title = "Average Text Amount Among Groups", subtitle = "With AI(group 1) vs With No AI(group 2) vs With Dummy(group 3)") +
   xlab("Groups") +
   ylab("Total Text Amount")
 
@@ -389,71 +391,99 @@ withSystemAvgRate <- withSystemAvgText / withSystemAvgTime
 avgRate <- data.frame(group = c("group 1", "group 2", "group 3"), rate = c(withAIAvgRate, noAIAvgRate, withSystemAvgRate))
 
 avgRatePlot <- ggplot(avgRate, aes(x = group, y = rate, fill = group)) + geom_bar(stat = "identity") +
-  labs(title = "Group 1 + Group 2 + Group 3", subtitle = "Average Rate of Text Input per Second") +
+  labs(title = "Average Rate of Text Input per Second", subtitle = "With AI(group 1) vs With No AI(group 2) vs With Dummy(group 3)") +
   xlab("Groups") +
   ylab("Text Input Rate per Second")
+
 
 #-----------------------------------------------------------------------------------------
 #P L O T 6
 #Self Reported Scores Among Groups
 
-gr1_selfScorePlot <- filter(test_post_gr1_gr3, Group == 1) %>% 
+post_gr1_filtered <- filter(post_gr1_gr3, Group == 1)
+post_gr3_filtered <- filter(post_gr1_gr3, Group == 3)
+
+gr1_selfScorePlot <- filter(post_gr1_gr3, Group == 1) %>% 
   ggplot(aes(Self_Score)) + 
-  labs(title = "Histogram of Self Reported Scores of the Creative Output", subtitle = "Group 1") +
+  labs(title = "Self Reported Scores of the Creative Output", subtitle = "With AI(Group 1)") +
   xlab("Score") +
   ylab("Count") +
+  geom_bar(position = "stack") +
+  scale_x_continuous(breaks=c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)) +
   xlim(histScoreMin, histScoreMax) +
-  geom_histogram()
-gr2_selfScorePlot <- ggplot(data = test_post_gr2, aes(Self_Score)) + 
-  labs(title = "Histogram of Self Reported Scores of the Creative Output", subtitle = "Group 2") +
+  geom_vline(xintercept = mean(post_gr1_filtered$Self_Score), color = "red", size = 2)
+
+gr2_selfScorePlot <- ggplot(data = post_gr2, aes(Self_Score)) + 
+  labs(title = "Self Reported Scores of the Creative Output", subtitle = "With No AI(Group 2)") +
   xlab("Score") +
   ylab("Count") +
+  geom_bar(position = "stack") +
+  scale_x_continuous(breaks=c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)) +
   xlim(histScoreMin, histScoreMax) +
-  geom_histogram()
-gr3_selfScorePlot <- filter(test_post_gr1_gr3, Group == 3) %>% 
+  geom_vline(xintercept = mean(post_gr2$Self_Score), color = "red", size = 2)
+
+
+gr3_selfScorePlot <- filter(post_gr1_gr3, Group == 3) %>% 
   ggplot(aes(Self_Score)) + 
-  labs(title = "Histogram of Self Reported Scores of the Creative Output", subtitle = "Group 3") +
+  labs(title = "Self Reported Scores of the Creative Output", subtitle = "With Dummy System(Group 3)") +
   xlab("Score") +
   ylab("Count") +
+  geom_bar(position = "stack")  +
+  scale_x_continuous(breaks=c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)) +
   xlim(histScoreMin, histScoreMax) +
-  geom_histogram()
+  geom_vline(xintercept = mean(post_gr3_filtered$Self_Score), color = "red", size = 2)
+
 
 #-----------------------------------------------------------------------------------------
 #P L O T 7
 #Gen Results Score Between Group1 and 3
-gr1_genResultScorePlot <- filter(test_post_gr1_gr3, Group == 1) %>%
+gr1_genResultScorePlot <- filter(post_gr1_gr3, Group == 1) %>%
   ggplot(aes(Gen_Score)) + 
-  labs(title = "How Helpful Were the Generated Results?", subtitle = "Group 1") +
+  labs(title = "How Helpful Were the Generated Results?", subtitle = "With AI(Group 1)") +
   xlab("Score") +
   ylab("Count") +
+  geom_bar(position = "stack") +
+  scale_x_continuous(breaks=c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)) +
   xlim(histScoreMin, histScoreMax) +
-  geom_histogram()
-gr3_genResultScorePlot <- filter(test_post_gr1_gr3, Group == 3) %>%
+  geom_vline(xintercept = mean(post_gr1_filtered$Gen_Score), color = "red", size = 2)
+
+gr3_genResultScorePlot <- filter(post_gr1_gr3, Group == 3) %>%
   ggplot(aes(Gen_Score)) + 
-  labs(title = "How Helpful Were the Generated Results?", subtitle = "Group 3") +
+  labs(title = "How Helpful Were the Generated Results?", subtitle = "With Dummy System(Group 3)") +
   xlab("Score") +
   ylab("Count") +
+  geom_bar(position = "stack") +
+  scale_x_continuous(breaks=c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)) +
   xlim(histScoreMin, histScoreMax) +
-  geom_histogram()
+  geom_vline(xintercept = mean(post_gr3_filtered$Gen_Score), color = "red", size = 2)
   
 #-----------------------------------------------------------------------------------------
 #P L O T 8
 #Colloborative Experience Score Between Group 1 and 3
-gr1_genExpPlot <- filter(test_post_gr1_gr3, Group == 1) %>%
-  ggplot(aes(Gen_Exp)) + 
-  labs(title = "How Fun was it to Collaborate?", subtitle = "Group 1") +
+gr1_genExpPlot <- filter(post_gr1_gr3, Group == 1) %>%
+  ggplot(aes(x = Gen_Exp)) + 
+  labs(title = "How Fun was it to Collaborate?", subtitle = "With AI(Group 1)") +
   xlab("Score") +
   ylab("Count") +
+  geom_bar(position = "stack") +
+  scale_x_continuous(breaks=c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10), limits=c(0, 10)) +
   xlim(histScoreMin, histScoreMax) +
-  geom_histogram()
-gr3_genExpPlot <- filter(test_post_gr1_gr3, Group == 3) %>%
-  ggplot(aes(Gen_Exp)) + 
-  labs(title = "How Fun was it to Collaborate?", subtitle = "Group 3") +
-  xlab("Score") +
-  ylab("Count") +
-  xlim(histScoreMin, histScoreMax) +
-  geom_histogram()
+  geom_vline(xintercept = mean(post_gr1_filtered$Gen_Score), color = "red", size = 2)
 
+gr3_genExpPlot <- filter(post_gr1_gr3, Group == 3) %>%
+  ggplot(aes(Gen_Exp)) + 
+  labs(title = "How Fun was it to Collaborate?", subtitle = "With Dummy System(Group 3)") +
+  xlab("Score") +
+  ylab("Count") +
+  geom_bar(position = "stack") +
+  scale_x_continuous(breaks=c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)) +
+  xlim(histScoreMin, histScoreMax) +
+  geom_vline(xintercept = mean(post_gr3_filtered$Gen_Score), color = "red", size = 2)
+
+#-----------------------------------------------------------------------------------------
+#P L O T 9
+#Subjective Scoring
+#Soon to come...
 
 ###############################
 #                             #
