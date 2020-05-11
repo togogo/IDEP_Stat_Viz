@@ -2,12 +2,16 @@
 library(jsonlite)
 library(readr)
 library(tidyverse)
-library("readxl")
+library(readxl)
+library(writexl)
 library(dplyr)
 library(ggplot2)
 library(gdata)#for binding columns
 library(cowplot)
 library(gridExtra)
+library(scales)
+library(ggthemes)
+#library(ggthemer)
 
 #############################
 #                           #
@@ -25,8 +29,10 @@ group1Num <- 10
 group2Num <- 10
 group3Num <- 10
 
-histScoreMin <- 1
-histScoreMax <- 10
+histScoreMin <- 0
+histScoreMax <- 11
+
+textLabelSize <- 8
 
 
 #############################
@@ -87,6 +93,9 @@ withSystem9 = fromJSON("./data/group3_with_random/with_random_subject11_2020_5_7
 #withSystem9 = fromJSON("./data/group3_with_random/with_random_subject9_2020_5_6_12_26_32_result.json")#with system, Subject 9 (Shuji Shibata)
 withSystem10 = fromJSON("./data/group3_with_random/with_random_subject10_2020_5_7_11_20_3_result.json")#with system, Subject 10 (Akira Suzuki)
 
+##additional collection
+#withSystem2 = fromJSON("./data/group3_with_random/with_random_extra1_2020_5_11_17_58_42_result.json")#with system, Subject 2 (Sayaka Arimoto) as dummy
+withSystem4 = fromJSON("./data/group3_with_random/with_random_extra2_2020_5_9_17_17_14_result.json")#with system, Subject 4 (Takeshi Oishi) as dummy
 
 #post-questionnaire
 test_post_gr1_gr3 <- read_excel("./data/post/test_post_gr1_gr3.xlsx",sheet=1)#for testing purposes...
@@ -94,6 +103,54 @@ test_post_gr2 <- read_excel("./data/post/test_post_gr2.xlsx", sheet = 1)#for tes
 
 post_gr2 <- read_excel("./data/post/post_gr2.xlsx", sheet = 1)
 post_gr1_gr3 <- read_excel("./data/post/post_gr1_gr3.xlsx", sheet = 1)
+
+#score results
+score <- read_excel("./data/score/scoring_after.xlsx")
+
+
+###################################
+#                                 #
+# O U T P U T   B U I L D I N G   #
+#                                 #
+###################################
+
+final_text_comp <- c(withAI1$`final text`, 
+                     sub2$`final text`, 
+                     withAI3$`final text`, 
+                     withAI4$`final text`, 
+                     withAI5$`final text`, 
+                     withAI6$`final text`, 
+                     withAI7$`final text`, 
+                     withAI8$`final text`, 
+                     withAI9$`final text`,
+                     withAI10$`final text`,
+                     noAI1$`final text`,
+                     noAI2$`final text`,
+                     noAI3$`final text`,
+                     noAI4$`final text`,
+                     noAI5$`final text`,
+                     noAI6$`final text`,
+                     noAI7$`final text`,
+                     noAI8$`final text`,
+                     noAI9$`final text`,
+                     noAI10$`final text`,
+                     withSystem1$`final text`,
+                     withSystem2$`final text`,
+                     withSystem3$`final text`,
+                     withSystem4$`final text`,
+                     withSystem5$`final text`,
+                     withSystem6$`final text`,
+                     withSystem7$`final text`,
+                     withSystem8$`final text`,
+                     withSystem9$`final text`,
+                     withSystem10$`final text`
+                     )
+
+group_cat <- c(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3)
+
+final_text_df <- data.frame(text = final_text_comp, group = group_cat)
+
+write_xlsx(final_text_df, "scoreing_material.xlsx")
 
 ###############################
 #                             #
@@ -137,7 +194,8 @@ group1_textNumPlot <- ggplot(group1_textNum_Combined_Data, aes(x = x), color = "
   geom_line(aes(y = sub7, color = "07")) +
   geom_line(aes(y = sub8, color = "08")) +
   geom_line(aes(y = sub9, color = "09")) +
-  geom_line(aes(y = sub10, color = "10"))
+  geom_line(aes(y = sub10, color = "10"))+
+  theme_economist() + scale_fill_economist()
 
   
 #
@@ -171,7 +229,8 @@ group2_textNumPlot <- ggplot(group2_textNum_Combined_Data, aes(x = x)) +
   geom_line(aes(y = sub7, color = "07")) +
   geom_line(aes(y = sub8, color = "08")) +
   geom_line(aes(y = sub9, color = "09")) +
-  geom_line(aes(y = sub10, color = "10"))
+  geom_line(aes(y = sub10, color = "10"))+
+  theme_economist() + scale_fill_economist()
 
 #
 #NO RANDOM (Group 3)
@@ -204,7 +263,8 @@ group3_textNumPlot <- ggplot(group3_textNum_Combined_Data, aes(x = x)) +
   geom_line(aes(y = sub7, color = "07")) +
   geom_line(aes(y = sub8, color = "08")) +
   geom_line(aes(y = sub9, color = "09")) +
-  geom_line(aes(y = sub10, color = "10"))
+  geom_line(aes(y = sub10, color = "10"))+
+  theme_economist() + scale_fill_economist()
 
 
 
@@ -246,7 +306,8 @@ group1GenNumTextAmountPlot <- ggplot(group1GenNumTextAmount, aes(x = genNum, y =
   ylim(textCountYMin, textCountYMax) +
   xlim(genNumMin, genNumMax) +
   geom_point() +
-  geom_smooth(method = lm)
+  geom_smooth(method = lm) +
+  theme_economist() + scale_fill_economist()
 
 #
 #Number of Times Generated vs Text Amount...Group 3
@@ -290,7 +351,8 @@ group3GenNumTextAmountPlot <- ggplot(group3GenNumTextAmount, aes(x = genNum, y =
   ylim(textCountYMin, textCountYMax) +
   xlim(genNumMin, genNumMax) +
   geom_point() +
-  geom_smooth(method = lm)
+  geom_smooth(method = lm) + 
+  theme_economist() + scale_fill_economist()
 
 
 #-----------------------------------------------------------------------------------------
@@ -345,7 +407,10 @@ avgTime <- data.frame(group = c("group 1", "group 2", "group 3"), time = c(withA
 avgTimePlot <- ggplot(avgTime, aes(x = group, y = time, fill = group)) + geom_bar(stat = "identity") +
   labs(title = "Average Input Time Among Groups", subtitle = "With AI(group 1) vs With No AI(group 2) vs With Dummy(group 3)") +
   xlab("Groups") +
-  ylab("Total Input Time")
+  ylab("Total Input Time") +
+  geom_text(label = round(avgTime$time, 2), position = position_stack(vjust = 0.80), size = textLabelSize) +
+  theme_economist() + scale_fill_economist()
+
 
 #-----------------------------------------------------------------------------------------
 #P L O T 4
@@ -378,7 +443,9 @@ avgText <- data.frame(group = c("group 1", "group 2", "group 3"), time = c(withA
 avgTextPlot <- ggplot(avgText, aes(x = group, y = time, fill = group)) + geom_bar(stat = "identity") +
   labs(title = "Average Text Amount Among Groups", subtitle = "With AI(group 1) vs With No AI(group 2) vs With Dummy(group 3)") +
   xlab("Groups") +
-  ylab("Total Text Amount")
+  ylab("Total Text Amount") +
+  geom_text(label = round(avgText$time), position = position_stack(vjust = 0.80), size = textLabelSize) +
+  theme_economist() + scale_fill_economist()
 
 #-----------------------------------------------------------------------------------------
 #P L O T 5
@@ -393,8 +460,11 @@ avgRate <- data.frame(group = c("group 1", "group 2", "group 3"), rate = c(withA
 avgRatePlot <- ggplot(avgRate, aes(x = group, y = rate, fill = group)) + geom_bar(stat = "identity") +
   labs(title = "Average Rate of Text Input per Second", subtitle = "With AI(group 1) vs With No AI(group 2) vs With Dummy(group 3)") +
   xlab("Groups") +
-  ylab("Text Input Rate per Second")
+  ylab("Text Input Rate per Second") +
+  geom_text(label = round(avgRate$rate, 2), position = position_stack(vjust = 0.80), size = textLabelSize) +
+  theme_economist() + scale_fill_economist()
 
+#avgRatePlot
 
 #-----------------------------------------------------------------------------------------
 #P L O T 6
@@ -411,8 +481,13 @@ gr1_selfScorePlot <- filter(post_gr1_gr3, Group == 1) %>%
   geom_bar(position = "stack") +
   scale_x_continuous(breaks=c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)) +
   xlim(histScoreMin, histScoreMax) +
-  geom_vline(xintercept = mean(post_gr1_filtered$Self_Score), color = "red", size = 2)
+  geom_vline(xintercept = mean(post_gr1_filtered$Self_Score), color = "red", size = 2) +
+  geom_text(aes(x=mean(post_gr1_filtered$Self_Score) + 1.1, label="mean:", y=5), colour="red", angle=0, vjust = 1.2, size=textLabelSize) +
+  geom_text(aes(x=mean(post_gr1_filtered$Self_Score) + 1, label= mean(post_gr1_filtered$Self_Score), y=4.6), colour="red", angle=0, vjust = 1.2, size=textLabelSize) +
+  theme_economist() + scale_fill_economist()
 
+#gr1_selfScorePlot
+  
 gr2_selfScorePlot <- ggplot(data = post_gr2, aes(Self_Score)) + 
   labs(title = "Self Reported Scores of the Creative Output", subtitle = "With No AI(Group 2)") +
   xlab("Score") +
@@ -420,8 +495,12 @@ gr2_selfScorePlot <- ggplot(data = post_gr2, aes(Self_Score)) +
   geom_bar(position = "stack") +
   scale_x_continuous(breaks=c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)) +
   xlim(histScoreMin, histScoreMax) +
-  geom_vline(xintercept = mean(post_gr2$Self_Score), color = "red", size = 2)
+  geom_vline(xintercept = mean(post_gr2$Self_Score), color = "red", size = 2) +
+  geom_text(aes(x=mean(post_gr2$Self_Score) + 1.1, label="mean:", y=5), colour="red", angle=0, vjust = 1.2, size=textLabelSize) +
+  geom_text(aes(x=mean(post_gr2$Self_Score) + 1, label= mean(post_gr2$Self_Score), y=4.6), colour="red", angle=0, vjust = 1.2, size=textLabelSize) +
+  theme_economist() + scale_fill_economist()
 
+#gr2_selfScorePlot
 
 gr3_selfScorePlot <- filter(post_gr1_gr3, Group == 3) %>% 
   ggplot(aes(Self_Score)) + 
@@ -431,8 +510,12 @@ gr3_selfScorePlot <- filter(post_gr1_gr3, Group == 3) %>%
   geom_bar(position = "stack")  +
   scale_x_continuous(breaks=c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)) +
   xlim(histScoreMin, histScoreMax) +
-  geom_vline(xintercept = mean(post_gr3_filtered$Self_Score), color = "red", size = 2)
+  geom_vline(xintercept = mean(post_gr3_filtered$Self_Score), color = "red", size = 2) +
+  geom_text(aes(x=mean(post_gr3_filtered$Self_Score) + 1.1, label="mean:", y=5), colour="red", angle=0, vjust = 1.2, size=textLabelSize) +
+  geom_text(aes(x=mean(post_gr3_filtered$Self_Score) + 1, label= round(mean(post_gr3_filtered$Self_Score), 2), y=4.6), colour="red", angle=0, vjust = 1.2, size=textLabelSize) +
+  theme_economist() + scale_fill_economist()
 
+gr3_selfScorePlot
 
 #-----------------------------------------------------------------------------------------
 #P L O T 7
@@ -445,7 +528,12 @@ gr1_genResultScorePlot <- filter(post_gr1_gr3, Group == 1) %>%
   geom_bar(position = "stack") +
   scale_x_continuous(breaks=c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)) +
   xlim(histScoreMin, histScoreMax) +
-  geom_vline(xintercept = mean(post_gr1_filtered$Gen_Score), color = "red", size = 2)
+  geom_vline(xintercept = mean(post_gr1_filtered$Gen_Score), color = "red", size = 2) +
+  geom_text(aes(x=mean(post_gr1_filtered$Gen_Score) + 1.1, label="mean:", y=5), colour="red", angle=0, vjust = 1.2, size=textLabelSize) +
+  geom_text(aes(x=mean(post_gr1_filtered$Gen_Score) + 1, label= round(mean(post_gr1_filtered$Gen_Score), 2), y=4.6), colour="red", angle=0, vjust = 1.2, size=textLabelSize) +
+  theme_economist() + scale_fill_economist()
+
+gr1_genResultScorePlot
 
 gr3_genResultScorePlot <- filter(post_gr1_gr3, Group == 3) %>%
   ggplot(aes(Gen_Score)) + 
@@ -455,20 +543,26 @@ gr3_genResultScorePlot <- filter(post_gr1_gr3, Group == 3) %>%
   geom_bar(position = "stack") +
   scale_x_continuous(breaks=c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)) +
   xlim(histScoreMin, histScoreMax) +
-  geom_vline(xintercept = mean(post_gr3_filtered$Gen_Score), color = "red", size = 2)
+  geom_vline(xintercept = mean(post_gr3_filtered$Gen_Score), color = "red", size = 2) +
+  geom_text(aes(x=mean(post_gr3_filtered$Gen_Score) + 1.1, label="mean:", y=5), colour="red", angle=0, vjust = 1.2, size=textLabelSize) +
+  geom_text(aes(x=mean(post_gr3_filtered$Gen_Score) + 1, label= round(mean(post_gr3_filtered$Gen_Score), 2), y=4.6), colour="red", angle=0, vjust = 1.2, size=textLabelSize) +
+  theme_economist() + scale_fill_economist()
+
+gr3_genResultScorePlot
   
 #-----------------------------------------------------------------------------------------
 #P L O T 8
 #Colloborative Experience Score Between Group 1 and 3
 gr1_genExpPlot <- filter(post_gr1_gr3, Group == 1) %>%
-  ggplot(aes(x = Gen_Exp)) + 
+  ggplot(aes(Gen_Exp)) + 
   labs(title = "How Fun was it to Collaborate?", subtitle = "With AI(Group 1)") +
   xlab("Score") +
   ylab("Count") +
   geom_bar(position = "stack") +
-  scale_x_continuous(breaks=c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10), limits=c(0, 10)) +
+  scale_x_continuous(seq(1,11, by = 1), limits=c(0, 10)) +
   xlim(histScoreMin, histScoreMax) +
-  geom_vline(xintercept = mean(post_gr1_filtered$Gen_Score), color = "red", size = 2)
+  geom_vline(xintercept = mean(post_gr1_filtered$Gen_Exp), color = "red", size = 2) +
+  theme_economist() + scale_fill_economist()
 
 gr3_genExpPlot <- filter(post_gr1_gr3, Group == 3) %>%
   ggplot(aes(Gen_Exp)) + 
@@ -478,13 +572,30 @@ gr3_genExpPlot <- filter(post_gr1_gr3, Group == 3) %>%
   geom_bar(position = "stack") +
   scale_x_continuous(breaks=c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)) +
   xlim(histScoreMin, histScoreMax) +
-  geom_vline(xintercept = mean(post_gr3_filtered$Gen_Score), color = "red", size = 2)
+  geom_vline(xintercept = mean(post_gr3_filtered$Gen_Exp), color = "red", size = 2) +
+  theme_economist() + scale_fill_economist()
 
+#gr1_genExpPlot
 #-----------------------------------------------------------------------------------------
 #P L O T 9
 #Subjective Scoring
-#Soon to come...
+group1_score <- filter(score, group == 1)
+group2_score <- filter(score, group == 2)
+group3_score <- filter(score, group == 3)
 
+group1_mean <- (mean(group1_score$score1) + mean(group1_score$score2) + mean(group1_score$score3))/3
+group2_mean <- (mean(group2_score$score1) + mean(group2_score$score2) + mean(group2_score$score3))/3
+group3_mean <- (mean(group3_score$score1) + mean(group3_score$score2) + mean(group3_score$score3))/3
+
+scoreAverage <- data.frame(group = c("group 1", "group 2", "group 3"), score = c(group1_mean, group2_mean, group3_mean))
+scoreAveragePlot <- ggplot(scoreAverage, aes(x = group, y = score, fill = group)) + geom_bar(stat = "identity") +
+  labs(title = "Final text output scored by 3 judges", subtitle = "With AI(group 1) vs With No AI(group 2) vs With Dummy(group 3)") +
+  xlab("Groups") +
+  ylab("Score") +
+  geom_text(label = round(scoreAverage$score, 2), position = position_stack(vjust = 0.80), size = textLabelSize) +
+  theme_economist() + scale_fill_economist()
+
+#scoreAveragePlot
 ###############################
 #                             #
 #      P L O T T I N G        #
@@ -509,8 +620,8 @@ avgTimePlot
 avgTextPlot
 avgRatePlot
 grid.arrange(avgTimePlot, avgTextPlot, avgRatePlot, nrow = 3)
-gr123_avgTextandRate <- grid.arrange(avgTextPlot, avgRatePlot, ncol = 2)
-gr123_avgTextandRate
+gr123_avgTimeTextRate <- grid.arrange(avgTimePlot, avgTextPlot, avgRatePlot, ncol = 3)
+gr123_avgTimeTextRate
 
 gr1_selfScorePlot
 gr2_selfScorePlot
@@ -531,6 +642,7 @@ grid.arrange(gr1_genExpPlot, gr3_genExpPlot, nrow = 2)
 gr13_genExpPlot <- grid.arrange(gr1_genExpPlot, gr3_genExpPlot, ncol = 2)
 gr13_genExpPlot
 
+scoreAveragePlot
 
 ###############################
 #                             #
@@ -541,9 +653,11 @@ gr13_genExpPlot
 
 # will use it later...
 ggsave(plot = gr123_textNumPlot, width = 19, height = 8, dpi = 300, filename = "./output/gr123_textNumPlot.pdf")
-ggsave(plot = gr123_avgTextandRate, width = 19, height = 8, dpi = 300, filename = "./output/gr123_avgTextandRate.pdf")
+#ggsave(plot = gr123_avgTextandRate, width = 19, height = 8, dpi = 300, filename = "./output/gr123_avgTextandRate.pdf")
+ggsave(plot = gr123_avgTimeTextRate, width = 19, height = 8, dpi = 300, filename = "./output/gr123_avgTimeTextRate.pdf")
 ggsave(plot = gr123_selfScorePlot, width = 19, height = 8, dpi = 300, filename = "./output/gr123_selfScorePlot.pdf")
 ggsave(plot = gr13_GenNumTextAmountPlot, width = 19, height = 8, dpi = 300, filename = "./output/gr13_GenNumTextAmountPlot.pdf")
 ggsave(plot = gr13_genResultScorePlot, width = 19, height = 8, dpi = 300, filename = "./output/gr13_genResultScorePlot.pdf")
 ggsave(plot = gr13_genExpPlot, width = 19, height = 8, dpi = 300, filename = "./output/gr13_genExpPlot.pdf")
+ggsave(plot = scoreAveragePlot, width = 19, height = 8, dpi = 300, filename = "./output/scoreAveragePlot.pdf")
 
